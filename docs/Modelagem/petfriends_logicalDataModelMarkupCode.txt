@@ -1,0 +1,203 @@
+
+CadastroAnimal {
+	id integer pk increments unique
+	nome varchar(100)
+	nome_final varchar(100) null
+	id_tipo_animal integer >* TipoAnimal.id
+	genero varchar(20) null
+	id_cor_pelo integer >* CorPeloAnimal.id
+	data_resgate date
+	idade_anos integer null
+	idade_meses integer null def(0)
+	peso decimal
+	id_porte_animal integer >* PorteAnimal.id
+	adestravel boolean null
+	foto blob null
+	historia varchar(4000) null
+	id_procedimento_padrao integer > CustoPorResgate.id
+	data_cadastro date
+	data_divulgacao date null
+	lar_temporario boolean null
+	despesa_mensal integer null
+	falecido boolean null
+	data_falecimento integer null
+	id_causa_falecimento integer null > CausaFalecimento.id
+}
+
+Usuario {
+	id integer pk increments unique
+	nome_completo varchar(200)
+	registro_geral varchar(20)
+	cpf varchar(20)
+	telefone varchar(50)
+	endereco varchar(200)
+	numero_casa_apartamento integer
+	complemento varchar(20) null
+	cep integer null
+	bairro varchar(100)
+	cidade varchar(100)
+	estado varchar(50)
+	id_tipo_usuario integer > TipoUsuario.id
+	link_rede_social integer null
+	data_cadastro integer
+	ativo boolean
+}
+
+PadrinhoDoador {
+	id integer pk increments unique
+	id_usuario_padrinho_doador integer > Usuario.id
+	tipo varchar(100) null
+	meio varchar(255) null
+	id_cadastro_animal integer *>* CadastroAnimal.id
+	valor_acordado decimal null
+	doador_ativo boolean
+	id_grupo_status integer > Status.id
+	motivo_saida_grupo varchar(1000) null
+	intencao_retorno boolean
+	observacao varchar(4000) null
+	data_cadastro date
+}
+
+ControleDoacao {
+	id integer pk increments unique
+	id_padrinho_doador integer >* PadrinhoDoador.id
+	data_entrada date
+	valor_real_entrada decimal
+	recebido boolean
+	cobranca varchar(100)
+	id_categoria integer > Categoria.id
+	id_lista_banco integer > ListaBanco.id
+	id_lista_status_doacao integer > ListaStatusDoacao.id
+	observacao varchar(4000) null
+}
+
+Categoria {
+	id integer pk increments unique
+	categoria varchar(100)
+}
+
+ListaBanco {
+	id integer pk increments unique
+	nome_banco varchar(100)
+}
+
+ListaStatusDoacao {
+	id integer pk increments unique
+	status varchar(100)
+}
+
+TipoAnimal {
+	id integer pk increments unique
+	tipo_animal varchar(50)
+	raca_animal varchar(50)
+}
+
+CorPeloAnimal {
+	id integer(50) pk increments unique
+	cor_pelo varchar(50)
+}
+
+PorteAnimal {
+	id integer(50) pk increments unique
+	porte varchar(50)
+}
+
+CustoPorResgatePorAnimal {
+	id integer pk increments unique
+	id_cadastro_animal integer *> CadastroAnimal.id
+	custo decimal
+	status_check_list boolean
+}
+
+LarTemporarioListaContato {
+	id integer pk increments unique
+	nome_lar_temporario varchar(200)
+	id_responsavel_lar_temporario integer > Usuario.id
+	id_status_contato integer > Status.id
+	previa_comentario varchar(4000) null
+	data_cadastro date
+	ativo boolean
+	data_arquivamento date
+	foto blob null
+}
+
+DespesaFixa {
+	id integer pk increments unique
+	tipo_despesa varchar(100)
+	valor_despesa decimal
+	id_porte_animal integer >* PorteAnimal.id
+}
+
+ControleLarTemporarioPorAnimal {
+	id integer pk increments unique
+	id_cadastro_animal integer >* CadastroAnimal.id
+	id_responsavel_ong integer > Usuario.id
+	id_responsavel_lar_temporario integer >* LarTemporarioListaContato.id
+	status_lar_temporario integer > Status.id
+	data_registro date
+	id_despesa_fixa integer >* DespesaFixa.id
+	data_vencimento date
+	ativo boolean
+}
+
+TipoUsuario {
+	id integer pk increments unique
+	tipo varchar(100)
+}
+
+Adontante {
+	id integer pk increments unique
+	id_usuario_adotante integer > Usuario.id
+	registro_adoçao integer
+}
+
+RegistroAdocao {
+	id integer pk increments unique
+	id_cadastro_animal integer >* CadastroAnimal.id
+	data_adocao date
+	id_adotante integer > Adontante.id
+	motivo_adocao varchar(255)
+	termo varchar(255) null
+	foto_link blob null
+	dilvulgacao_grupo_apoiadores boolean
+	tipo_meio_adocao varchar(255)
+	adocao_concluida integer
+	data_cadastro date
+}
+
+Status {
+	id integer pk increments unique
+	status_contato varchar(100)
+}
+
+TaxiListaContato {
+	id integer pk increments unique
+	id_funcionario_ong integer > FuncionarioOng.id
+	id_usuario_responsavel_taxi integer > Usuario.id
+	valor decimal
+	id_status_contato integer > Status.id
+	previa_comentario varchar(4000) null
+}
+
+FuncionarioOng {
+	id integer pk increments unique
+	email varchar(100)
+	login varchar(100)
+	senha varchar(100)
+	id_usuario integer > Usuario.id
+}
+
+CustoPorResgate {
+	id integer pk increments unique
+	acao varchar(100)
+	custo_macho decimal
+	custo_femea decimal
+	data_cadastro timestamp
+	ativo boolean
+}
+
+CausaFalecimento {
+	id integer pk increments unique
+	causa_falecimento varchar(100)
+}
+

@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Teste de conexao com o banco";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Carregando uma lista de dados.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Nota</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach(var a in (List<PetFriends.Models.ConexaoTest>)ViewBag.users)
+            {
+                <tr>
+                    <td>@a.id</td>
+                    <td>@a.nome</td>
+                    <td>@a.notes</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

@@ -1,0 +1,220 @@
+
+dim_Categoria {
+	id integer pk increments unique
+	categoria varchar(100)
+}
+
+dim_ListaBanco {
+	id integer pk increments unique
+	nome_banco varchar(100)
+}
+
+dim_ListaStatusDoacao {
+	id integer pk increments unique
+	status varchar(100)
+}
+
+dim_CausaFalecimento {
+	id integer pk increments unique
+	causa_falecimento varchar(100)
+}
+
+fact_CadastroAnimal {
+	id integer pk increments unique
+	nome varchar(100)
+	nome_final varchar(100) null
+	id_tipo_animal integer
+	data_resgate date
+	genero varchar(20) null
+	idade_anos integer null
+	idade_meses integer null def(0)
+	peso decimal
+	id_porte_animal integer
+	id_cor_pelo integer
+	historia varchar(4000) null
+	falecido boolean null
+	data_falecimento integer null
+	id_causa_falecimento integer null
+}
+
+vw_fact_EstrelinhaPorCausa_rel002 {
+	id integer pk increments unique
+	nome varchar(100)
+	tipo_animal varchar(50)
+	raca varchar(50)
+	data_resgate date
+	genero varchar(20) null
+	idade integer null
+	peso decimal
+	porte varchar(50)
+	cor_pelo integer(50)
+	historia varchar(4000) null
+	data_falecimento date null
+	tempo_apos_regate integer null
+	causa_falecimento varchar(100) null
+}
+
+vw_fact_AnimaisAdotados_rel003 {
+	id integer pk increments unique
+	nome varchar(100)
+	nome_final varchar(100)
+	tipo_animal varchar(50)
+	raca varchar(50)
+	data_resgate date
+	genero varchar(20) null
+	idade integer null
+	peso decimal
+	porte varchar(50)
+	cor_pelo integer(50)
+	historia varchar(4000) null
+	data_adocao date null
+	dias_para_adocao integer null
+	adotante varchar(100) null
+	telefone_adotante varchar
+	termo_concluido boolean
+	foto_link blob
+	tipo_meio_adocao varchar(255)
+	dilvulgacao_grupo_apoiadores boolean
+}
+
+vw_fact_ResgateAdotadosEstrelinhaPorPeriodo_rel004 {
+	id integer pk increments unique
+	periodo date
+	total_resgate integer
+	total_adocao integer null
+	total_falecimento integer
+}
+
+vw_fact_FinancaPorAnimalAtivoNaoAdotado_rel005 {
+	id integer pk increments unique
+	nome varchar(100)
+	data_entrada date
+	tipo_despesa varchar(50)
+	valor_despesa varchar(50)
+	total_gasto_mensal decimal
+	valor_real_entrada_doado decimal null
+	balanco_final integer null
+}
+
+fact_ControleDoacao {
+	id integer pk increments unique
+	id_padrinho_doador integer
+	data_entrada date
+	valor_real_entrada decimal
+	recebido boolean
+	cobranca varchar(100)
+	id_categoria integer
+	id_lista_banco integer
+	id_lista_status_doacao integer
+	observacao varchar(4000) null
+}
+
+fact_PadrinhoDoador {
+	id integer pk increments unique
+	id_usuario_padrinho_doador integer
+	tipo varchar(100) null
+	meio varchar(255) null
+	id_cadastro_animal integer
+	valor_acordado decimal null
+	doador_ativo boolean
+	id_grupo_status integer
+	motivo_saida_grupo varchar(1000) null
+	intencao_retorno boolean
+	observacao varchar(4000) null
+	data_cadastro date
+}
+
+vw_fact_PrevisaoDeDoacaoPorAnimalAtivoNaoAdotado_rel006 {
+	id integer pk increments unique
+	nome_padrinho integer
+	telefone_padrinho integer
+	nome_animal varchar(100)
+	doador_ativo integer
+	banco varchar(50)
+	data_entrada date
+	valor_acordado decimal(50)
+	valor_real_entrada decimal
+	previsao decimal
+	cobranca decimal null
+	balanco_final decimal null
+}
+
+fact_RegistroAdocao {
+	id integer pk increments unique
+	id_cadastro_animal integer
+	data_adocao date
+	id_adotante integer
+	motivo_adocao varchar(255)
+	termo_concluido boolean null
+	foto_link blob null
+	dilvulgacao_grupo_apoiadores boolean
+	tipo_meio_adocao varchar(255)
+	adocao_concluida integer
+	data_cadastro date
+}
+
+dim_DespesaFixa {
+	id integer pk increments unique
+	tipo_despesa varchar(100)
+	valor_despesa decimal
+	id_porte_animal integer
+}
+
+dim_Adontante {
+	id integer pk increments unique
+	id_usuario_adotante integer
+	registro_adoçao integer
+}
+
+dim_Usuario {
+	id integer pk increments unique
+	nome_completo varchar(200)
+	registro_geral varchar(20)
+	cpf varchar(20)
+	telefone varchar(50)
+	endereco varchar(200)
+	numero_casa_apartamento integer
+	complemento varchar(20)
+	cep integer
+	bairro varchar(100)
+	cidade varchar(100)
+	estado varchar(50)
+	id_tipo_usuario integer
+	link_rede_social integer
+	data_cadastro integer
+	ativo boolean
+}
+
+dim_TipoUsuario {
+	id integer pk increments unique
+	tipo varchar(100)
+}
+
+dim_TipoAnimal {
+	id integer pk increments unique
+	tipo_animal varchar(50)
+	raca_animal varchar(50)
+}
+
+dim_PorteAnimal {
+	id integer(50) pk increments unique
+	porte varchar(50)
+}
+
+dim_CorPeloAnimal {
+	id integer(50) pk increments unique
+	cor_pelo varchar(50)
+}
+
+vw_fact_FinancaPorAnimalAtivoNaoAdotado_rel007 {
+	id integer pk increments unique
+	data_entrada date
+	nota varchar(100)
+	descricao_despesa varchar(50)
+	categoria varchar(50)
+	banco varchar
+	entrada decimal null
+	saida decimal null
+	status varchar
+}
+
