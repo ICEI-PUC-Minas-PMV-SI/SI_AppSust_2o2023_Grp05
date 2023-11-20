@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bZhd5FMmgfnFLZc+ZkoF5m6diaeOkr/XMSlVgVpfRWA=",
+  "Hash": "uJdgx+QoG0KW32qeGby9g0E3RP7gMB5sez1YWREbYjo=",
   "Source": "PetFriends",
   "BasePath": "_content/PetFriends",
   "Mode": "Default",
@@ -100,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\Cat03.jpg",
-      "SourceId": "PetFriends",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
-      "BasePath": "_content/PetFriends",
-      "RelativePath": "Images/Cat03.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Cat03.jpg"
     },
     {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\logo.png",

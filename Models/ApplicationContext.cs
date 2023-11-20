@@ -15,5 +15,7 @@ namespace PetFriends.Data
             modelBuilder.UseSerialColumns();
         }
         public DbSet<ConexaoTest> ConexaoTest { get; set; }
+
+        public DbSet<CadastroAnimal> CadastroAnimal { get; set; }
     }
 }

@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Images\Cat03.jpg" />
     <None Include="wwwroot\Images\logo.png" />
     <None Include="wwwroot\Images\test.png" />
   </ItemGroup>

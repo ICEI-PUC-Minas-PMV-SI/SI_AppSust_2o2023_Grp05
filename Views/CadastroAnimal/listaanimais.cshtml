@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Teste - Lista de animais";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Carregando uma lista de animais.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>nome_final</th>
+            <th>id_tipo_animal</th>
+            <th>genero</th>
+            <th>id_cor_pelo</th>
+            <th>data_resgate</th>
+            <th>idade_anos</th>
+            <th>idade_meses</th>
+            <th>peso</th>
+            <th>id_porte_animal</th>
+            <th>adestravel</th>
+            <th>foto</th>
+            <th>historia</th>
+            <th>id_procedimento_padrao</th>
+            <th>data_cadastro</th>
+            <th>data_divulgacao</th>
+            <th>lar_temporario</th>
+            <th>despesa_mensal</th>
+            <th>falecido</th>
+            <th>data_falecimento</th>
+            <th>id_causa_falecimento</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach(var a in (List<PetFriends.Models.CadastroAnimal>)ViewBag.users)
+            {
+                <tr>
+                    <td>@a.id</td>
+                    <td>@a.nome</td>
+                    <td>@a.nome_final</td>
+                    <td>@a.id_tipo_animal</td>
+                    <td>@a.genero</td>
+                    <td>@a.id_cor_pelo</td>
+                    <td>@a.data_resgate</td>
+                    <td>@a.idade_anos</td>
+                    <td>@a.idade_meses</td>
+                    <td>@a.peso</td>
+                    <td>@a.id_porte_animal</td>
+                    <td>@a.adestravel</td>
+                    <td>@a.foto</td>
+                    <td>@a.historia</td>
+                    <td>@a.id_procedimento_padrao</td>
+                    <td>@a.data_cadastro</td>
+                    <td>@a.data_divulgacao</td>
+                    <td>@a.lar_temporario</td>
+                    <td>@a.despesa_mensal</td>
+                    <td>@a.falecido</td>
+                    <td>@a.data_falecimento</td>
+                    <td>@a.id_causa_falecimento</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
