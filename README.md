@@ -10,15 +10,17 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Everton Kennedy
-* Sara Caroline Vidal de Souza
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* [Everton Kennedy](https://github.com/evertondskk)
+* [Isabela Martins de Carvalho Pereira](https://github.com/isabelamartinez)
+* [João Paulo Maia de Paula](https://github.com/JPMaiadeP)
+* [Roberto Santos de Almeida](https://github.com/b3tones)
+* [Sara Caroline Vidal de Souza](https://github.com/Saracvidal)
+* [Vinícius de Paula Nominato Marques](https://github.com/viniciusnominato)
+* [Yael Joaquim Nobre Dias](https://github.com/YaelNobre)
 
 ## Orientador
 
-* Nome completo do professor 1
+* Professor Nesley Jesus Daher de Oliveira
 
 # Planejamento
 
