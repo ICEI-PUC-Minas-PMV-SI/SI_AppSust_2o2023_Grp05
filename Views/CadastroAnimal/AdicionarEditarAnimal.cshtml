@@ -20,31 +20,26 @@
         <div class="col-md-12 pb-0" style="width: 100%; float:right;">
             <form class="form-control">
                 <div class="col-md-2 pb-1" style="width: 15%; float:left; margin-right:1%">
-                    <img src="~/Images/test.png" class="img-fluid width=200px height=200px rounded border-1 border-dark">
+                    <img src="~/Images/test.png" class="img-fluid max-width=200px height=200px rounded border-1 border-dark">
                 </div>            
                 <div class="row">
-                    <div class="col-md-4 was-validated ">
-                        
-                        <label for="validationCustom01" class="form-label">Meu Nome</label>
-                        <input type="text" class="form-control" id="validationCustom01" required placeholder="Nome">
-                        
+                    <div class="col-md-4 was-validated">                        
+                        <label for="meuNome" class="form-label">Meu Nome</label>
+                        <input type="text" class="form-control" id="meuNome" required placeholder="Nome">
+                        <div class="invalid-feedback">Campo Obrigatório</div>                        
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-3">
                         <label for="nomeFinal" class="form-label">Nome Final</label>
-                        <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="Nome Final">
- 
-                    </div>
-                   
-                    <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">O que eu sou</label> 
+                        <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="Nome Final"> 
+                    </div>                   
+                    <div class="col-md-2 was-validated"> 
+                        <label for="tipoAnimal" class="form-label">O que eu sou</label> 
                         <div class="input-group">
-
                             <button type="button" class="btn btn-success">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                                     <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                                 </svg>
-                            </button>
-                                   
+                            </button>                                   
                             <button type="button" class="btn btn-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -57,13 +52,11 @@
                                 <option value="2">Gato</option>
                                 <option value="3">Coelho</option>
                             </select>  
-                                    
-
                         </div>
                     </div>
 
                     <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">Gênero</label>       
+                        <label for="genero" class="form-label">Gênero</label>       
                         <select class="form-select" required>
                             <option value="">F/M</option>                        
                             <option value="2">Fêmea</option>
@@ -72,25 +65,22 @@
                         <div class="invalid-feedback">Campo Requerido.</div>
                     </div>
                     <div class="col-md-1 " style="float:right">
-                        <label for="validationCustom01" class="form-label">Adestrar?</label>
+                        <label for="adestrar" class="form-label">Adestrar?</label>
                         <div>
                              <input type="checkbox" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger">
                         </div>                   
                     </div>                
                 </div>
                 <p></p>
-                <div class="row">                   
-                    
+                <div class="row">                         
                     <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">Pelo</label> 
+                        <label for="pelo" class="form-label">Pelo</label> 
                         <div class="input-group">
-
                             <button type="button" class="btn btn-success">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                                     <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                                 </svg>
                             </button>
-                                   
                             <button type="button" class="btn btn-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -103,23 +93,20 @@
                                 <option value="2">Branco</option>
                                 <option value="3">Caramelo</option>
                             </select>  
-                                    
-
                         </div>
                     </div>
                     <div class="invalid-feedback">Campo Requerido.</div>
                     <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">Porte</label>       
+                        <label for="porte" class="form-label">Porte</label>       
                         <select class="form-select" required>
                             <option value="">P/M/G</option>
                             <option value="1">Pequeno</option>
                             <option value="2">Médio</option>
                             <option value="3">Grande</option>
-                        </select>                    
-                        
+                        </select>                        
                     </div>               
                     <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">Anos</label>       
+                        <label for="idadeAnos" class="form-label">Anos</label>       
                         <select class="form-select" required>
                             <option value=""></option>
                             @for (int i = 0; i < 101; i++)
@@ -130,7 +117,7 @@
                         <div class="invalid-feedback">Campo Requerido.</div>
                     </div>
                     <div class="col-md-1 ">
-                        <label for="validationCustom01" class="form-label">Meses</label>       
+                        <label for="idadeMeses" class="form-label">Meses</label>       
                         <select class="form-select" required>
                             <option value=""></option>
                             @for (int i = 0; i < 13; i++)
@@ -142,29 +129,27 @@
                         <div class="invalid-feedback">Campo Requerido.</div>
                     </div>
                      <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">Peso</label>
-                        <input type="text" class="form-control" id="validationCustom01" required placeholder="Kg (ex:3.75)">
+                        <label for="peso" class="form-label">Peso</label>
+                        <input type="text" class="form-control" id="peso" required placeholder="Kg (ex:3.75)">
                         <div class="invalid-feedback">Campo Requerido.</div>
                     </div>
-
                     <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">Data do Resgate</label> 
+                        <label for="dataResgate" class="form-label">Data do Resgate</label> 
                         <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="dd/mm/aaaa">
                     </div>   
-                    
                 </div>
                 <p></p>
                 <div class="row">                    
                     <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">Data do Cadastro</label> 
+                        <label for="dataCadastro" class="form-label">Data do Cadastro</label> 
                         <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="dd/mm/aaaa">
                     </div>   
                     <div class="col-md-2 ">
-                        <label for="validationCustom01" class="form-label">Data da Divulgação</label> 
+                        <label for="dataDivulgacao" class="form-label">Data da Divulgação</label> 
                         <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="dd/mm/aaaa">
                     </div>
                     <div class="col-md-8 ">
-                        <label for="validationCustom01" class="form-label">Lar Temporario</label> 
+                        <label for="larTemporario" class="form-label">Lar Temporario</label> 
                         <div class="input-group">
                             <button type="button" class="btn btn-success">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-plus-square-fill" viewBox="0 0 16 16">
@@ -191,13 +176,13 @@
                     <div class="col-md-2 ">
                     </div>
                     <div class="col-md-2 " style="float:right; max-width: 220px;">
-                        <label for="validationCustom01" class="form-label">Falecido?</label>
+                        <label for="falecido" class="form-label">Falecido?</label>
                         <div>
                              <input type="checkbox" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger">
                         </div>                   
                     </div> 
                     <div class="col-md-6 " style="float:right; max-width: 780px;">
-                        <label for="validationCustom01" class="form-label">Causa do falecimento</label> 
+                        <label for="causaFalecimento" class="form-label">Causa do falecimento</label> 
                         <div class="input-group">
                             <button type="button" class="btn btn-success">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-plus-square-fill" viewBox="0 0 16 16">
@@ -219,14 +204,14 @@
                         </div>
                     </div>                      
                     <div class="col-md-3 " style="float:right; max-width: 326px;">
-                        <label for="validationCustom01" class="form-label">Data do Falecimento</label> 
+                        <label for="dataFalecimento" class="form-label">Data do Falecimento</label> 
                         <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="Nome Final">
                     </div>                    
                 </div> 
                 <div class="row">
                     <div class="col-md-12  pb-1" style="float:right; max-width: 1600px;">
-                        <label for="validationTextarea" class="form-label">Minha História</label>
-                        <textarea class="form-control" id="validationTextarea" placeholder="Minha história aqui...." required ></textarea>
+                        <label for="historia" class="form-label">Minha História</label>
+                        <textarea class="form-control" id="historia" placeholder="Minha história aqui...." required ></textarea>
                         <div class="invalid-feedback">
                             Minha história aqui....
                         </div>

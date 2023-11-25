@@ -32,7 +32,6 @@ C:\Users\Sara Vidal\source\repos\PetFriendsWebApplication\SI_AppSust_2o2023_Grp0
 C:\Users\Sara Vidal\source\repos\PetFriendsWebApplication\SI_AppSust_2o2023_Grp05\PetFriends\obj\Debug\net6.0\ref\PetFriends.dll
 C:\Users\Sara Vidal\source\repos\PetFriendsWebApplication\SI_AppSust_2o2023_Grp05\PetFriends\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Sara Vidal\source\repos\PetFriendsWebApplication\SI_AppSust_2o2023_Grp05\PetFriends\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Sara Vidal\Desktop\SI_AppSust_2o2023_Grp05\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Sara Vidal\Desktop\SI_AppSust_2o2023_Grp05\bin\Debug\net6.0\appsettings.json
 C:\Users\Sara Vidal\Desktop\SI_AppSust_2o2023_Grp05\bin\Debug\net6.0\PetFriends.staticwebassets.runtime.json
 C:\Users\Sara Vidal\Desktop\SI_AppSust_2o2023_Grp05\bin\Debug\net6.0\PetFriends.exe
