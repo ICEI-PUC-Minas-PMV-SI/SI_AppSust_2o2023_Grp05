@@ -46,28 +46,28 @@
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                                 </svg>
                             </button>
-                            <select class="form-select" required>
+                            <select class="form-select" id="tipoAnimal" required>
                                 <option value="">Tipo</option>
                                 <option value="1">Cão</option>
                                 <option value="2">Gato</option>
                                 <option value="3">Coelho</option>
                             </select>  
-                        </div>
+                            <div class="invalid-feedback">Campo Obrigatório</div>  
+                        </div> 
                     </div>
-
-                    <div class="col-md-2 ">
+                    <div class="col-md-2 was-validated"> 
                         <label for="genero" class="form-label">Gênero</label>       
-                        <select class="form-select" required>
+                        <select class="form-select" id="genero" required>
                             <option value="">F/M</option>                        
                             <option value="2">Fêmea</option>
                             <option value="1">Macho</option>
                         </select>                    
-                        <div class="invalid-feedback">Campo Requerido.</div>
+                        <div class="invalid-feedback">Campo Obrigatório</div> 
                     </div>
                     <div class="col-md-1 " style="float:right">
                         <label for="adestrar" class="form-label">Adestrar?</label>
                         <div>
-                             <input type="checkbox" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger">
+                             <input type="checkbox" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger" id="toggleAdestrar">
                         </div>                   
                     </div>                
                 </div>
@@ -75,19 +75,19 @@
                 <div class="row">                         
                     <div class="col-md-2 ">
                         <label for="pelo" class="form-label">Pelo</label> 
-                        <div class="input-group">
-                            <button type="button" class="btn btn-success">
+                        <div class="input-group" id="grupoPelo">
+                            <button type="button" class="btn btn-success" id="btnAddPelo">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                                     <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                                 </svg>
                             </button>
-                            <button type="button" class="btn btn-primary">
+                            <button type="button" class="btn btn-primary" id="btnEditPelo">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                                 </svg>
                             </button>
-                            <select class="form-select" required>
+                            <select class="form-select" id="pelo" required>
                                 <option value="">Cor</option>
                                 <option value="1">Preto</option>
                                 <option value="2">Branco</option>
@@ -98,7 +98,7 @@
                     <div class="invalid-feedback">Campo Requerido.</div>
                     <div class="col-md-2 ">
                         <label for="porte" class="form-label">Porte</label>       
-                        <select class="form-select" required>
+                        <select class="form-select" id="porte" required>
                             <option value="">P/M/G</option>
                             <option value="1">Pequeno</option>
                             <option value="2">Médio</option>
@@ -107,7 +107,7 @@
                     </div>               
                     <div class="col-md-2 ">
                         <label for="idadeAnos" class="form-label">Anos</label>       
-                        <select class="form-select" required>
+                        <select class="form-select" id="idadeAnos" required>
                             <option value=""></option>
                             @for (int i = 0; i < 101; i++)
                             {
@@ -118,7 +118,7 @@
                     </div>
                     <div class="col-md-1 ">
                         <label for="idadeMeses" class="form-label">Meses</label>       
-                        <select class="form-select" required>
+                        <select class="form-select" id="idadeMeses" required>
                             <option value=""></option>
                             @for (int i = 0; i < 13; i++)
                             {
@@ -135,34 +135,34 @@
                     </div>
                     <div class="col-md-2 ">
                         <label for="dataResgate" class="form-label">Data do Resgate</label> 
-                        <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="dd/mm/aaaa">
+                        <input type="text" class="form-control border border-secondary" id="dataResgate" placeholder="dd/mm/aaaa">
                     </div>   
                 </div>
                 <p></p>
                 <div class="row">                    
                     <div class="col-md-2 ">
                         <label for="dataCadastro" class="form-label">Data do Cadastro</label> 
-                        <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="dd/mm/aaaa">
+                        <input type="text" class="form-control border border-secondary" id="dataCadastro" placeholder="dd/mm/aaaa">
                     </div>   
                     <div class="col-md-2 ">
                         <label for="dataDivulgacao" class="form-label">Data da Divulgação</label> 
-                        <input type="text" class="form-control border border-secondary" id="nomeFinal" placeholder="dd/mm/aaaa">
+                        <input type="text" class="form-control border border-secondary" id="dataDivulgacao" placeholder="dd/mm/aaaa">
                     </div>
                     <div class="col-md-8 ">
                         <label for="larTemporario" class="form-label">Lar Temporario</label> 
-                        <div class="input-group">
-                            <button type="button" class="btn btn-success">
+                        <div class="input-group" id="grupoLarTemporario">
+                            <button type="button" class="btn btn-success" id="btnAddLarTemporario">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                                     <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                                 </svg>
                             </button>
-                            <button type="button" class="btn btn-primary">
+                            <button type="button" class="btn btn-primary" id="btnEditLarTemporario">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                                 </svg>
                             </button>
-                            <select class="form-select" required>
+                            <select class="form-select" id="larTemporario" required>
                                 <option value=""></option>
                                 <option value="1">Lar da Pipi</option>
                                 <option value="2">Lar da Olga</option>
@@ -178,24 +178,24 @@
                     <div class="col-md-2 " style="float:right; max-width: 220px;">
                         <label for="falecido" class="form-label">Falecido?</label>
                         <div>
-                             <input type="checkbox" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger">
+                             <input type="checkbox" data-toggle="toggle" data-on="Sim" data-off="Não" data-onstyle="success" data-offstyle="danger" id="toggleFalecido">
                         </div>                   
                     </div> 
                     <div class="col-md-6 " style="float:right; max-width: 780px;">
                         <label for="causaFalecimento" class="form-label">Causa do falecimento</label> 
-                        <div class="input-group">
-                            <button type="button" class="btn btn-success">
+                        <div class="input-group" id="grupoCausaFalecimento">
+                            <button type="button" class="btn btn-success" id="btnAddCausaFalecimento">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                                     <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
                                 </svg>
                             </button>                                   
-                            <button type="button" class="btn btn-primary">
+                            <button type="button" class="btn btn-primary" id="bntEditCausaFalecimento">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                     <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                                 </svg>
                             </button>
-                            <select class="form-select" required>
+                            <select class="form-select" id="causaFalecimento" required>
                                 <option value=""></option>
                                 <option value="1">Idade</option>
                                 <option value="2">Cancer</option>
@@ -211,7 +211,7 @@
                 <div class="row">
                     <div class="col-md-12  pb-1" style="float:right; max-width: 1600px;">
                         <label for="historia" class="form-label">Minha História</label>
-                        <textarea class="form-control" id="historia" placeholder="Minha história aqui...." required ></textarea>
+                        <textarea class="form-control" id="historia" placeholder="Minha história aqui...." required></textarea>
                         <div class="invalid-feedback">
                             Minha história aqui....
                         </div>
