@@ -10,35 +10,34 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-custom border-bottom box-shadow mb-3" style="background-color: #FF7A26">
+         <nav class="navbar navbar-dark navbar-expand-sm navbar-toggleable-sm bg-custom border-bottom box-shadow mb-3" style="background-color: #FF7A26">
             <div class="container-fluid">
-                <!--<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PetFriends</a>-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span><img id="logo" src="~/Images/logo.png" width="50" height="50"/></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <img id="logo" src="~/Images/logo.png" width="50" height="50"/>
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        <li class="nav-item g-0">
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item g-0">
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="CadastroAnimal" asp-action="listaanimais">CadastroAnimal</a>
-                        </li>
-                        <li class="nav-item">
+                        </li>                        
+                        <li class="nav-item g-0">
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Lar Temporario</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item g-0">
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Custos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item g-0">
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Despesas</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item g-0">
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Adoção</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item g-0">
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="ConexaoTest" asp-action="conexaotestlist">Lista ConexaoTest</a>
                         </li>
                     </ul>
@@ -50,12 +49,11 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container justify-content-sm-center g-0" style="max-width: 1670px;min-width: 1670px;">
+        <main role="main" class="container justify-content-sm-center g-0" style="max-width: 1670px;">
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - PetFriends - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

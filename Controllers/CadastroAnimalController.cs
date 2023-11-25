@@ -15,5 +15,11 @@ namespace PetFriends.Controllers
             ViewBag.users = _context.CadastroAnimal.ToList();
             return View();
         }
+
+        public IActionResult AdicionarEditarAnimal()
+        {
+            ViewBag.users = _context.CadastroAnimal.ToList();
+            return View();
+        }
     }
 }
