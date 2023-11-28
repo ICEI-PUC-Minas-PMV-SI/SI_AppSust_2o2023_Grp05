@@ -5,8 +5,7 @@ namespace PetFriends.Data
 {
     public class ApplicationContext : DbContext
     {
-        public ApplicationContext(DbContextOptions<ApplicationContext> options):
-            base(options)
+        public ApplicationContext(DbContextOptions<ApplicationContext> options):base(options)
         {
         }
 
@@ -18,6 +17,10 @@ namespace PetFriends.Data
 
         public DbSet<Animal> Animal { get; set; }
 
-        //public DbSet<Genero> Genero { get; set; }
+        public DbSet<Genero> Genero { get; set; }
+
+        public DbSet<Tipo> Tipo { get; set; }
+
+        public DbSet<Raca> Raca { get; set; }
     }
 }

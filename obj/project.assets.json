@@ -10491,7 +10491,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
       "Microsoft.VisualStudio.Web.CodeGeneration.Templating >= 6.0.16",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.1",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "System.Collections >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -10577,6 +10578,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
+          },
+          "System.Collections": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           }
         },
         "imports": [
