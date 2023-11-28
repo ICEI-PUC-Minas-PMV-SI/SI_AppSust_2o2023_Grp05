@@ -1,5 +1,5 @@
 
-CadastroAnimal {
+Animal {
 	id integer pk increments unique
 	nome varchar(100)
 	nome_final varchar(100) null
@@ -48,7 +48,7 @@ PadrinhoDoador {
 	id_usuario_padrinho_doador integer > Usuario.id
 	tipo varchar(100) null
 	meio varchar(255) null
-	id_cadastro_animal integer *>* CadastroAnimal.id
+	id_cadastro_animal integer *>* Animal.id
 	valor_acordado decimal null
 	doador_ativo boolean
 	id_grupo_status integer > Status.id
@@ -104,7 +104,7 @@ PorteAnimal {
 
 CustoPorResgatePorAnimal {
 	id integer pk increments unique
-	id_cadastro_animal integer *> CadastroAnimal.id
+	id_cadastro_animal integer *> Animal.id
 	custo decimal
 	status_check_list boolean
 }
@@ -130,7 +130,7 @@ DespesaFixa {
 
 ControleLarTemporarioPorAnimal {
 	id integer pk increments unique
-	id_cadastro_animal integer >* CadastroAnimal.id
+	id_cadastro_animal integer >* Animal.id
 	id_responsavel_ong integer > Usuario.id
 	id_responsavel_lar_temporario integer >* LarTemporarioListaContato.id
 	status_lar_temporario integer > Status.id
@@ -153,7 +153,7 @@ Adontante {
 
 RegistroAdocao {
 	id integer pk increments unique
-	id_cadastro_animal integer >* CadastroAnimal.id
+	id_cadastro_animal integer >* Animal.id
 	data_adocao date
 	id_adotante integer > Adontante.id
 	motivo_adocao varchar(255)

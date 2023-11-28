@@ -1,4 +1,4 @@
-CREATE TABLE "public.CadastroAnimal" (
+CREATE TABLE "public.Animal" (
 	"id" serial NOT NULL UNIQUE,
 	"nome" varchar(100) NOT NULL,
 	"nome_final" varchar(100),
@@ -21,7 +21,7 @@ CREATE TABLE "public.CadastroAnimal" (
 	"falecido" BOOLEAN,
 	"data_falecimento" integer,
 	"id_causa_falecimento" integer,
-	CONSTRAINT "CadastroAnimal_pk" PRIMARY KEY ("id")
+	CONSTRAINT "Animal_pk" PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
 );
@@ -310,16 +310,16 @@ CREATE TABLE "public.CausaFalecimento" (
 
 
 
-ALTER TABLE "CadastroAnimal" ADD CONSTRAINT "CadastroAnimal_fk0" FOREIGN KEY ("id_tipo_animal") REFERENCES "TipoAnimal"("id");
-ALTER TABLE "CadastroAnimal" ADD CONSTRAINT "CadastroAnimal_fk1" FOREIGN KEY ("id_cor_pelo") REFERENCES "CorPeloAnimal"("id");
-ALTER TABLE "CadastroAnimal" ADD CONSTRAINT "CadastroAnimal_fk2" FOREIGN KEY ("id_porte_animal") REFERENCES "PorteAnimal"("id");
-ALTER TABLE "CadastroAnimal" ADD CONSTRAINT "CadastroAnimal_fk3" FOREIGN KEY ("id_procedimento_padrao") REFERENCES "CustoPorResgate"("id");
-ALTER TABLE "CadastroAnimal" ADD CONSTRAINT "CadastroAnimal_fk4" FOREIGN KEY ("id_causa_falecimento") REFERENCES "CausaFalecimento"("id");
+ALTER TABLE "Animal" ADD CONSTRAINT "Animal_fk0" FOREIGN KEY ("id_tipo_animal") REFERENCES "TipoAnimal"("id");
+ALTER TABLE "Animal" ADD CONSTRAINT "Animal_fk1" FOREIGN KEY ("id_cor_pelo") REFERENCES "CorPeloAnimal"("id");
+ALTER TABLE "Animal" ADD CONSTRAINT "Animal_fk2" FOREIGN KEY ("id_porte_animal") REFERENCES "PorteAnimal"("id");
+ALTER TABLE "Animal" ADD CONSTRAINT "Animal_fk3" FOREIGN KEY ("id_procedimento_padrao") REFERENCES "CustoPorResgate"("id");
+ALTER TABLE "Animal" ADD CONSTRAINT "Animal_fk4" FOREIGN KEY ("id_causa_falecimento") REFERENCES "CausaFalecimento"("id");
 
 ALTER TABLE "Usuario" ADD CONSTRAINT "Usuario_fk0" FOREIGN KEY ("id_tipo_usuario") REFERENCES "TipoUsuario"("id");
 
 ALTER TABLE "PadrinhoDoador" ADD CONSTRAINT "PadrinhoDoador_fk0" FOREIGN KEY ("id_usuario_padrinho_doador") REFERENCES "Usuario"("id");
-ALTER TABLE "PadrinhoDoador" ADD CONSTRAINT "PadrinhoDoador_fk1" FOREIGN KEY ("id_cadastro_animal") REFERENCES "CadastroAnimal"("id");
+ALTER TABLE "PadrinhoDoador" ADD CONSTRAINT "PadrinhoDoador_fk1" FOREIGN KEY ("id_cadastro_animal") REFERENCES "Animal"("id");
 ALTER TABLE "PadrinhoDoador" ADD CONSTRAINT "PadrinhoDoador_fk2" FOREIGN KEY ("id_grupo_status") REFERENCES "Status"("id");
 
 ALTER TABLE "ControleDoacao" ADD CONSTRAINT "ControleDoacao_fk0" FOREIGN KEY ("id_padrinho_doador") REFERENCES "PadrinhoDoador"("id");
@@ -333,14 +333,14 @@ ALTER TABLE "ControleDoacao" ADD CONSTRAINT "ControleDoacao_fk3" FOREIGN KEY ("i
 
 
 
-ALTER TABLE "CustoPorResgatePorAnimal" ADD CONSTRAINT "CustoPorResgatePorAnimal_fk0" FOREIGN KEY ("id_cadastro_animal") REFERENCES "CadastroAnimal"("id");
+ALTER TABLE "CustoPorResgatePorAnimal" ADD CONSTRAINT "CustoPorResgatePorAnimal_fk0" FOREIGN KEY ("id_cadastro_animal") REFERENCES "Animal"("id");
 
 ALTER TABLE "LarTemporarioListaContato" ADD CONSTRAINT "LarTemporarioListaContato_fk0" FOREIGN KEY ("id_responsavel_lar_temporario") REFERENCES "Usuario"("id");
 ALTER TABLE "LarTemporarioListaContato" ADD CONSTRAINT "LarTemporarioListaContato_fk1" FOREIGN KEY ("id_status_contato") REFERENCES "Status"("id");
 
 ALTER TABLE "DespesaFixa" ADD CONSTRAINT "DespesaFixa_fk0" FOREIGN KEY ("id_porte_animal") REFERENCES "PorteAnimal"("id");
 
-ALTER TABLE "ControleLarTemporarioPorAnimal" ADD CONSTRAINT "ControleLarTemporarioPorAnimal_fk0" FOREIGN KEY ("id_cadastro_animal") REFERENCES "CadastroAnimal"("id");
+ALTER TABLE "ControleLarTemporarioPorAnimal" ADD CONSTRAINT "ControleLarTemporarioPorAnimal_fk0" FOREIGN KEY ("id_cadastro_animal") REFERENCES "Animal"("id");
 ALTER TABLE "ControleLarTemporarioPorAnimal" ADD CONSTRAINT "ControleLarTemporarioPorAnimal_fk1" FOREIGN KEY ("id_responsavel_ong") REFERENCES "Usuario"("id");
 ALTER TABLE "ControleLarTemporarioPorAnimal" ADD CONSTRAINT "ControleLarTemporarioPorAnimal_fk2" FOREIGN KEY ("id_responsavel_lar_temporario") REFERENCES "LarTemporarioListaContato"("id");
 ALTER TABLE "ControleLarTemporarioPorAnimal" ADD CONSTRAINT "ControleLarTemporarioPorAnimal_fk3" FOREIGN KEY ("status_lar_temporario") REFERENCES "Status"("id");
@@ -349,7 +349,7 @@ ALTER TABLE "ControleLarTemporarioPorAnimal" ADD CONSTRAINT "ControleLarTemporar
 
 ALTER TABLE "Adontante" ADD CONSTRAINT "Adontante_fk0" FOREIGN KEY ("id_usuario_adotante") REFERENCES "Usuario"("id");
 
-ALTER TABLE "RegistroAdocao" ADD CONSTRAINT "RegistroAdocao_fk0" FOREIGN KEY ("id_cadastro_animal") REFERENCES "CadastroAnimal"("id");
+ALTER TABLE "RegistroAdocao" ADD CONSTRAINT "RegistroAdocao_fk0" FOREIGN KEY ("id_cadastro_animal") REFERENCES "Animal"("id");
 ALTER TABLE "RegistroAdocao" ADD CONSTRAINT "RegistroAdocao_fk1" FOREIGN KEY ("id_adotante") REFERENCES "Adontante"("id");
 
 

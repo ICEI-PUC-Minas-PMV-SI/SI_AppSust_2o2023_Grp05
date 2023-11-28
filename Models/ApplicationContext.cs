@@ -16,6 +16,8 @@ namespace PetFriends.Data
         }
         public DbSet<ConexaoTest> ConexaoTest { get; set; }
 
-        public DbSet<CadastroAnimal> CadastroAnimal { get; set; }
+        public DbSet<Animal> Animal { get; set; }
+
+        //public DbSet<Genero> Genero { get; set; }
     }
 }

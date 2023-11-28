@@ -19,7 +19,7 @@ dim_CausaFalecimento {
 	causa_falecimento varchar(100)
 }
 
-fact_CadastroAnimal {
+fact_Animal {
 	id integer pk increments unique
 	nome varchar(100)
 	nome_final varchar(100) null

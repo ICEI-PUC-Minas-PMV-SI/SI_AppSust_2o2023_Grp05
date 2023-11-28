@@ -23,7 +23,7 @@
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="CadastroAnimal" asp-action="listaanimais">CadastroAnimal</a>
+                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Animal" asp-action="Index">Animal</a>
                         </li>                        
                         <li class="nav-item g-0">
                             <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Lar Temporario</a>
@@ -49,12 +49,12 @@
             </div>
         </nav>
     </header>
-    <div class="container justify-content-sm-center g-0" style="max-width: 1670px;min-width: 1670px;">
-        <main role="main" class="container justify-content-sm-center g-0" style="max-width: 1670px;">
+    <div class="container justify-content-sm-center g-0">
+        <main role="main" class="container justify-content-sm-center g-0">
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style="max-height:30px">
         <div class="container">
             &copy; 2023 - PetFriends - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

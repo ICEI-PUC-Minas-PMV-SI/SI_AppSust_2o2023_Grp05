@@ -15,12 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Sara Vidal\Desktop\SI_AppSust_2o2023_Grp05
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Sara Vidal/Desktop/SI_AppSust_2o2023_Grp05/Views/CadastroAnimal/AdicionarEditarAnimal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9BbmltYWxcQWRpY2lvbmFyRWRpdGFyQW5pbWFsLmNzaHRtbA==
+[C:/Users/Sara Vidal/Desktop/SI_AppSust_2o2023_Grp05/Views/Animal/AdicionarEditarAnimal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEFkaWNpb25hckVkaXRhckFuaW1hbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/SI_AppSust_2o2023_Grp05/Views/CadastroAnimal/listaanimais.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9BbmltYWxcbGlzdGFhbmltYWlzLmNzaHRtbA==
+[C:/Users/Sara Vidal/Desktop/SI_AppSust_2o2023_Grp05/Views/Animal/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sara Vidal/Desktop/SI_AppSust_2o2023_Grp05/Views/Animal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Sara Vidal/Desktop/SI_AppSust_2o2023_Grp05/Views/ConexaoTest/conexaotestlist.cshtml]
