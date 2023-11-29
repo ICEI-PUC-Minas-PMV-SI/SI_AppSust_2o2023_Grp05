@@ -41,7 +41,10 @@ namespace PetFriends.Models
         [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
         public String? DataResgate { get; set; }
 
+        [Range(int.MinValue, 0)]
         public int? IdadeAnos { get; set; }
+
+        [Range(int.MinValue, 0)]
         public int? IdadeMeses { get; set; }
 
         [Required(ErrorMessage = "Peso obrigatório")]

@@ -30,7 +30,8 @@ namespace PetFriends.Controllers
             ViewBag.IdGenero = _context.Genero;
             ViewBag.IdTipoAnimal = _context.TipoAnimal;
             ViewBag.IdPorte = _context.Porte;
-
+            ViewBag.IdadeAnos = Animal.IdadeAnos;
+            ViewBag.IdadeMeses = Animal.IdadeMeses;
 
             return View(Animal);
             /*

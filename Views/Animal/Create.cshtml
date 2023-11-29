@@ -12,15 +12,15 @@
 @using (Html.BeginForm())
 {
     <div class="form-horizontal" style="font-size:12px;">
-        <div class="form-group">
-            <div class="row">
-                <div class="row" style="font-size:12px;">
-                    <div class="col-md-2 pb-0" style="width: 15%; float:left; margin-right:1%">
+        <div class="form-group" style="width: 100%;">
+            <div class="row" style="width: 100%;">
+                <div class="row" style="font-size:12px; width: 100%;">
+                    <div class="pb-0" style="width: 15%; float:left; margin-right:1%">
                         <img src="@Url.Content("~/Images/logo.png")" class="img-fluid width=200px height=200px rounded border-1 border-dark">                             
                     </div>
 
-                    <div class="form-control col-md-2 pb-0" style="width: 75%; float:left; margin-right:1%">
-                        <div class="row">
+                    <div class="form-control pb-0" style="width: 75%; float:right;">
+                        <div class="row" style="width: 100%;">
                             <div class="form-group col-md-4 pb-0 was-validated">
                                 @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label" })                    
                                 @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @data_val="true", @required="required",@placeholder="Nome do Pet aqui...",@oninvalid="this.setCustomValidity('Favor digitar o nome do pet aqui...')" } })
@@ -28,7 +28,7 @@
                                 <div class="invalid-feedback">Campo Obrigatório</div>
                             </div>
 
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 @Html.LabelFor(model => model.NomeFinal, htmlAttributes: new { @class = "control-label" })                    
                                 @Html.EditorFor(model => model.NomeFinal, new { htmlAttributes = new { @class = "form-control",@placeholder="Nome Final do Pet aqui..." } })
                                 @Html.ValidationMessageFor(model => model.NomeFinal, "", new { @class = "text-danger" })
@@ -57,10 +57,21 @@
                                 @Html.LabelFor(model => model.Porte, htmlAttributes: new { @class = "control-label" })  
                                 @Html.DropDownListFor(model => model.Porte, new SelectList(ViewBag.IdPorte, "Id", "PorteDesc"), "P/M/G...", htmlAttributes: new { @class = "form-control selectpicker", @data_val="true", @required="required",@placeholder="Tipo do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" })
                                 @Html.ValidationMessageFor(model => model.Porte, "", new { @class = "text-danger" })
-                            </div>  
+                            </div>
+                            
 
+                            <div class="col-md-2">
+                                @Html.LabelFor(model => model.IdadeAnos, htmlAttributes: new { @class = "control-label" })                    
+                                @Html.EditorFor(model => model.IdadeAnos, new { htmlAttributes = new { @class = "form-control",@placeholder="" } })
+                                @Html.ValidationMessageFor(model => model.IdadeAnos, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-2">
+                                @Html.LabelFor(model => model.IdadeMeses, htmlAttributes: new { @class = "control-label" })                    
+                                @Html.EditorFor(model => model.IdadeMeses, new { htmlAttributes = new { @class = "form-control",@placeholder="" } })
+                                @Html.ValidationMessageFor(model => model.IdadeMeses, "", new { @class = "text-danger" })
+                            </div>
+                   
 
-                           
                             
                         </div>
                         
