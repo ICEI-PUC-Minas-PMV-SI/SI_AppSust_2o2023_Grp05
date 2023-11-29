@@ -22,5 +22,7 @@ namespace PetFriends.Data
         public DbSet<Tipo> Tipo { get; set; }
 
         public DbSet<Raca> Raca { get; set; }
+
+        public DbSet<CorPelo> CorPelo { get; set; }
     }
 }
