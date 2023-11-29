@@ -28,7 +28,7 @@ namespace PetFriends.Controllers
             ViewBag.Nome = Animal.Nome;
             ViewBag.NomeFinal = Animal.NomeFinal;
             ViewBag.IdGenero = _context.Genero;
-            ViewBag.IdTipo = _context.Tipo;
+            ViewBag.IdTipoAnimal = _context.TipoAnimal;
 
             return View(Animal);
             /*
@@ -78,7 +78,7 @@ namespace PetFriends.Controllers
                 animal.Nome = Model.Nome;
                 animal.NomeFinal = Model.NomeFinal;
                 ViewBag.IdGenero = _context.Genero;
-                ViewBag.IdTipo = _context.Tipo;
+                ViewBag.IdTipo = _context.TipoAnimal;
                 /*animal.IdTipoAnimal = Model.IdTipoAnimal;
                 animal.id_cor_pelo = Model.id_cor_pelo;
                 animal.data_resgate = Model.data_resgate;

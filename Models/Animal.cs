@@ -21,10 +21,10 @@ namespace PetFriends.Models
         public String? NomeFinal { get; set; }
 
         [Display(Name = "Tipo")]
-        [ForeignKey("Tipo")]
-        public int IdTipo{ get; set; }
+        [ForeignKey("TipoAnimal")]
+        public int IdTipoAnimal{ get; set; }
 
-        public virtual Tipo Tipo { get; set; }
+        public virtual TipoAnimal TipoAnimal { get; set; }
 
         [Display(Name = "Gênero")]
         [ForeignKey("Genero")]
@@ -91,11 +91,4 @@ namespace PetFriends.Models
 
         public int? IdCausaFalecimento { get; set; }
     }
-
-    /*public class Genero
-    {
-        public int Id { get; set; }
-        public string GeneroDesc { get; set; }
-    }*/
-
 }

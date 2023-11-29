@@ -7,7 +7,7 @@ namespace PetFriends.Models
         [Key]
         public int Id { get; set; }
 
-        [Display(Name = "Tipo")]
+        [Display(Name = "TipoAnimal")]
         [DataType(DataType.Text)]
         [Required(ErrorMessage = "Tipo animal obrigatório")]
         [MaxLength(50)]
