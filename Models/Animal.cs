@@ -96,6 +96,10 @@ namespace PetFriends.Models
         [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
         public String? DataFalecimento { get; set; }
 
+
+        [Display(Name = "Causa Falecimento")]
+        [ForeignKey("CausaFalecimento")]
         public int? IdCausaFalecimento { get; set; }
+        public virtual CausaFalecimento CausaFalecimento { get; set; }
     }
 }

@@ -34,8 +34,9 @@ namespace PetFriends.Controllers
             ViewBag.IdadeMeses = Animal.IdadeMeses;
             ViewBag.IdCorPelo = _context.CorPelo;
             ViewBag.IdLarTemporario = _context.LarTemporario;
+            ViewBag.IdCausaFalecimento = _context.CausaFalecimento;
 
-            
+
 
             return View(Animal);
             /*
