@@ -29,12 +29,12 @@ namespace PetFriends.Models
         [Display(Name = "Gênero")]
         [ForeignKey("Genero")]
         public int IdGenero { get; set; }
-
         public virtual Genero Genero { get; set; }
 
         [Display(Name = "Cor do pelo")]
-        [Required(ErrorMessage = "Cor do pelo obrigatório")]
+        [ForeignKey("CorPelo")]
         public int IdCorPelo { get; set; }
+        public virtual CorPelo CorPelo { get; set; }
 
         [DataType(DataType.Text)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
@@ -53,10 +53,7 @@ namespace PetFriends.Models
         [Display(Name = "Porte")]
         [ForeignKey("Porte")]
         public int IdPorte { get; set; }
-
         public virtual Porte Porte { get; set; }
-
-
 
         [Display(Name = "Adestrar?")]
         public bool Adestravel { get; set; }
@@ -84,9 +81,11 @@ namespace PetFriends.Models
         [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
         public String? DataDivulgacao { get; set; }
 
-        [Required(ErrorMessage = "Lar temporário obrigatório")]
+        
+        [Display(Name = "Lar Temporario")]
+        [ForeignKey("LarTemporario")]
         public int IdLarTemporario { get; set; }
-
+        public virtual LarTemporario LarTemporario { get; set; }
         public double? DespesaMensal { get; set; }
 
         public bool Falecido { get; set; }

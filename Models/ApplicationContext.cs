@@ -26,5 +26,7 @@ namespace PetFriends.Data
         public DbSet<Porte> Porte { get; set; }
 
         public DbSet<CorPelo> CorPelo { get; set; }
+
+        public DbSet<LarTemporario> LarTemporario { get; set; }
     }
 }

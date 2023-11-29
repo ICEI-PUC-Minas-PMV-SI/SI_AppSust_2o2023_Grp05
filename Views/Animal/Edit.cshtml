@@ -22,9 +22,6 @@
         @Html.HiddenFor(model => model.Id)
         <p class="form-group">
             <div class="row">
-                <div class="col-md-2 pb-0" style="width: 15%; float:left; margin-right:1%">
-                    <img src="@Url.Content(Model.Foto)" class="img-fluid width=200px height=200px rounded border-1 border-dark">                             
-                </div>
 
                 <div class="col-md-4 pb-0 was-validated">
                     @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label" })                    
