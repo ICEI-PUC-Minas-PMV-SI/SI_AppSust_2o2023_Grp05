@@ -8,11 +8,9 @@ namespace PetFriends.Models
         [Key]
         public int Id { get; set; }
 
-        [Display(Name = "Gênero")]
-        [ForeignKey("Tipo")]
-        public int IdTipo { get; set; }
-
-        public virtual Genero Genero { get; set; }
+        [Display(Name = "TipoAnimal")]
+        [ForeignKey("TipoAnimal")]
+        public int IdTipoAnimal { get; set; }
 
         [Display(Name = "Raça")]
         [DataType(DataType.Text)]

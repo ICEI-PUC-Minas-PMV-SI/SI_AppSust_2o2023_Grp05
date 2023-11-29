@@ -11,7 +11,7 @@ namespace PetFriends.Models
 
         [Display(Name = "Meu Nome")]
         [DataType(DataType.Text)]
-        [Required(ErrorMessage = "Tipo animal obrigatório")]
+        [Required(ErrorMessage = "Nome animal obrigatório")]
         [MaxLength(100)]
         public String Nome { get; set; }
 
@@ -48,9 +48,14 @@ namespace PetFriends.Models
         public double Peso { get; set; }
 
         [Display(Name = "Porte")]
-        [Required(ErrorMessage = "Porte do animal obrigatório")]
-        public int IdPorteAnimal { get; set; }
+        [ForeignKey("Porte")]
+        public int IdPorte { get; set; }
 
+        public virtual Porte Porte { get; set; }
+
+
+
+        [Display(Name = "Adestrar?")]
         public bool Adestravel { get; set; }
 
         [DataType(DataType.Text)]

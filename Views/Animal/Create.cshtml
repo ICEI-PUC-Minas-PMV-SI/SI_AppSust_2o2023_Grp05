@@ -4,53 +4,89 @@
 }
 <div style="font-size:20px;">@ViewData["Title"]</div>
 
-<div class="form-horizontal" style="font-size:12px;">
-    <div class="form-group">
-        <div class="row">
-            <div class="row" style="font-size:12px;">
-                <div class="col-md-2 pb-0" style="width: 15%; float:left; margin-right:1%">
-                    <img src="@Url.Content("~/Images/logo.png")" class="img-fluid width=200px height=200px rounded border-1 border-dark">                             
+<head>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+</head>
+
+<body>
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal" style="font-size:12px;">
+        <div class="form-group">
+            <div class="row">
+                <div class="row" style="font-size:12px;">
+                    <div class="col-md-2 pb-0" style="width: 15%; float:left; margin-right:1%">
+                        <img src="@Url.Content("~/Images/logo.png")" class="img-fluid width=200px height=200px rounded border-1 border-dark">                             
+                    </div>
+
+                    <div class="form-control col-md-2 pb-0" style="width: 75%; float:left; margin-right:1%">
+                        <div class="row">
+                            <div class="form-group col-md-4 pb-0 was-validated">
+                                @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label" })                    
+                                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @data_val="true", @required="required",@placeholder="Nome do Pet aqui...",@oninvalid="this.setCustomValidity('Favor digitar o nome do pet aqui...')" } })
+                                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "invalid-feedback" }) 
+                                <div class="invalid-feedback">Campo Obrigatório</div>
+                            </div>
+
+                            <div class="col-md-3">
+                                @Html.LabelFor(model => model.NomeFinal, htmlAttributes: new { @class = "control-label" })                    
+                                @Html.EditorFor(model => model.NomeFinal, new { htmlAttributes = new { @class = "form-control",@placeholder="Nome Final do Pet aqui..." } })
+                                @Html.ValidationMessageFor(model => model.NomeFinal, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group col-md-3 pb-0 was-validated">
+                                @Html.LabelFor(model => model.TipoAnimal, htmlAttributes: new { @class = "control-label" })  
+                                @Html.DropDownListFor(model => model.TipoAnimal, new SelectList(ViewBag.IdTipoAnimal, "Id", "TipoDesc"), "Cão,Gato...", htmlAttributes: new { @class = "form-control selectpicker", @data_val="true", @required="required",@placeholder="Tipo do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" })
+                                @Html.ValidationMessageFor(model => model.TipoAnimal, "", new { @class = "text-danger" })
+                            </div>
+                            
+                            <div class="col-md-1">
+                                @Html.LabelFor(model => model.Adestravel, htmlAttributes: new { @class = "control-label" })                 
+                                @Html.CheckBoxFor(model => model.Adestravel, new { @id = "toggleAdestrar",@title = "Sim/Não", @data_toggle = "toggle", @data_on="Sim", @data_off="Não",@data_onstyle="success", @data_offstyle="danger"})
+                                @Html.ValidationMessageFor(model => model.Adestravel, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-2 pb-0 was-validated">
+                                @Html.LabelFor(model => model.Genero, htmlAttributes: new { @class = "control-label" })  
+                                @Html.DropDownListFor(model => model.Genero, new SelectList(ViewBag.IdGenero, "Id", "GeneroDesc"), "F/M", htmlAttributes: new { @class = "form-control selectpicker", @data_val="true", @required="required",@placeholder="Tipo do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" })
+                                @Html.ValidationMessageFor(model => model.Genero, "", new { @class = "text-danger" })
+                            </div>  
+
+                            <div class="form-group col-md-2 pb-0 was-validated">
+                                @Html.LabelFor(model => model.Porte, htmlAttributes: new { @class = "control-label" })  
+                                @Html.DropDownListFor(model => model.Porte, new SelectList(ViewBag.IdPorte, "Id", "PorteDesc"), "P/M/G...", htmlAttributes: new { @class = "form-control selectpicker", @data_val="true", @required="required",@placeholder="Tipo do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" })
+                                @Html.ValidationMessageFor(model => model.Porte, "", new { @class = "text-danger" })
+                            </div>  
+
+
+                           
+                            
+                        </div>
+                        
+                    </div>
                 </div>
-
-                <div class="col-md-4 pb-0 was-validated">
-                    @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label" })                    
-                    @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @data_val="true", @required="required",@placeholder="Nome do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" } })
-                    @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })                     
-                </div>
-
-                <div class="col-md-3">
-                    @Html.LabelFor(model => model.NomeFinal, htmlAttributes: new { @class = "control-label" })                    
-                    @Html.EditorFor(model => model.NomeFinal, new { htmlAttributes = new { @class = "form-control",@placeholder="Nome Final do Pet aqui..." } })
-                    @Html.ValidationMessageFor(model => model.NomeFinal, "", new { @class = "text-danger" })                     
-                </div>
-
-               <div class="form-group col-md-3">
-                    @Html.DropDownListFor(model => model.TipoAnimal, new SelectList(ViewBag.IdTipoAnimal, "Id", "TipoDesc"), "Choose... ")
-                 </div>
-
-
-               
-                 <div class="form-group col-md-3">
-                    @Html.DropDownListFor(model => model.Genero, new SelectList(ViewBag.IdGenero, "Id", "GeneroDesc"), "Choose... ")
-                 </div>
-
-
-
-
             </div>
         </div>
-    </div>
-    <p class="form-group">
-        <p class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Save" class="btn btn-primary" />
+        <p class="form-group">
+            <p class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </p>
         </p>
-    </p>
 
-</div>
-
+    </div>
+}
     
 
 
 <p>
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+
+</body>
