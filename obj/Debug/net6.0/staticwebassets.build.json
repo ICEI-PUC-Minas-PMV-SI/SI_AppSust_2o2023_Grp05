@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l9opP7gi0cANlUOg6rTFB5iPus29MSahQ+DnMvS6qiw=",
+  "Hash": "VR00qOt7PKjQQGNlzNUOXTS0DTK6eRhw6nRUU4M5cqU=",
   "Source": "PetFriends",
   "BasePath": "_content/PetFriends",
   "Mode": "Default",
@@ -1173,6 +1173,23 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate-vsdoc.js",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "lib/jquery-validation/dist/jquery.validate-vsdoc.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate-vsdoc.js"
+    },
+    {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PetFriends",
       "SourceType": "Discovered",
@@ -1188,6 +1205,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.unobtrusive-ajax.js",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.unobtrusive-ajax.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.unobtrusive-ajax.js"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.unobtrusive-ajax.min.js",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.unobtrusive-ajax.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.unobtrusive-ajax.min.js"
     },
     {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
