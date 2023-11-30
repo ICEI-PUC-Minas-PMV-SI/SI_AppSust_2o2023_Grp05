@@ -13,7 +13,7 @@ namespace PetFriends.Controllers
         {
             _context = context;
         }
-
+        //test
         public ActionResult Index()
         {
             return View(_context.Animal.ToList());
