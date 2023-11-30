@@ -29,13 +29,13 @@ namespace PetFriends.Controllers
             ViewBag.NomeFinal = Animal.NomeFinal;
             ViewBag.IdGenero = _context.Genero;
             ViewBag.IdTipoAnimal = _context.TipoAnimal;
-            ViewBag.IdPorte = _context.Porte;
+            ViewBag.IdPorte = _context.Porte;            
             ViewBag.IdadeAnos = Animal.IdadeAnos;
             ViewBag.IdadeMeses = Animal.IdadeMeses;
             ViewBag.IdCorPelo = _context.CorPelo;
+            ViewBag.Peso = Animal.Peso;
             ViewBag.IdLarTemporario = _context.LarTemporario;
             ViewBag.IdCausaFalecimento = _context.CausaFalecimento;
-
 
 
             return View(Animal);

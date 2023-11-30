@@ -47,6 +47,7 @@ namespace PetFriends.Models
         [Range(int.MinValue, 0)]
         public int? IdadeMeses { get; set; }
 
+        [Display(Name = "Peso (kg)")]
         [Required(ErrorMessage = "Peso obrigatório")]
         public double Peso { get; set; }
 
