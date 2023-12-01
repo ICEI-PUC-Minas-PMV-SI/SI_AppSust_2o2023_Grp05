@@ -40,16 +40,14 @@ namespace PetFriends.Models
         [ForeignKey("CorPelo")]
         public int IdCorPelo { get; set; }
         public virtual CorPelo CorPelo { get; set; }
-        
+
         [Display(Name = "Data do Resgate")]
-        [BindProperty, DataType(DataType.Date)]
-        [Required(ErrorMessage = "Data do Resgate do pet é obrigatório")]
+        [DataType(DataType.Date)]
+        //[Required(ErrorMessage = "Data do Resgate do pet é obrigatório")]
         [MaxLength(10)]
         [StringLength(10)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        //[DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
-        //[RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
-        public DateTime DataResgate { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
+        public String? DataResgate { get; set; }
 
         [Range(0, int.MaxValue, ErrorMessage = "Anos somente acima de 0.")]
         public int? IdadeAnos { get; set; }
@@ -84,20 +82,18 @@ namespace PetFriends.Models
 
         [Display(Name = "Data do Cadastro")]
         [DataType(DataType.Date)]
-        [Required(ErrorMessage = "Data do Cadastro do pet é obrigatório")]
+        //[Required(ErrorMessage = "Data do Cadastro do pet é obrigatório")]
         [MaxLength(10)]
         [StringLength(10)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
-        [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
-        public DateTime DataCadastro { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode = true,DataFormatString = "{0:yyyy-MM-dd}")]
+        public String? DataCadastro { get; set; }
 
         [Display(Name = "Data da Divulgacao")]
-        [BindProperty, DataType(DataType.Date)]
+        [DataType(DataType.Date)]
         [MaxLength(10)]
         [StringLength(10)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
-        [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
-        public DateTime? DataDivulgacao { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
+        public String? DataDivulgacao { get; set; }
 
         [Display(Name = "Lar Temporário")]
         [Required(ErrorMessage = "Lar temporário do pet é obrigatório")]
@@ -108,12 +104,11 @@ namespace PetFriends.Models
         public bool Falecido { get; set; }
 
         [Display(Name = "Data do Falecimento")]
-        [BindProperty, DataType(DataType.Date)]
+        [DataType(DataType.Date)]
         [MaxLength(10)]
         [StringLength(10)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
-        [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
-        public DateTime? DataFalecimento { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
+        public String? DataFalecimento { get; set; }
 
         [Display(Name = "Causa Falecimento")]
         [DataType(DataType.Text)]

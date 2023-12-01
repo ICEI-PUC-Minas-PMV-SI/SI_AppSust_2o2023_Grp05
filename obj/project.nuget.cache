@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "y5zcqxrXDoYzXyRljLdjiJiq6pqSO/u8AXFkWcuSF+qZltTi7mpaP7aSq1EHzjBjSu814+S70aXfiSYdyraQ6A==",
+  "dgSpecHash": "9hDb4ibUnBds4PA838SfkndSwQXy63QVaYz8brE1IE1RE6nPTeV2SWATv7zWninNr99YHZu9HiFAt3z5VAWrtg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sara Vidal\\.nuget\\packages\\bootstrap.datepicker\\1.8.0.1\\bootstrap.datepicker.1.8.0.1.nupkg.sha512",
+    "C:\\Users\\Sara Vidal\\.nuget\\packages\\bootstrap.datepicker.globalize\\1.0.0\\bootstrap.datepicker.globalize.1.0.0.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
@@ -54,6 +56,7 @@
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\Sara Vidal\\.nuget\\packages\\jquery-globalize\\0.1.1\\jquery-globalize.0.1.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",

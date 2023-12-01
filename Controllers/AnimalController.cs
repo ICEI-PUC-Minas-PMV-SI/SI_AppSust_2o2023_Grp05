@@ -68,18 +68,18 @@ namespace PetFriends.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Animal animal)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 _context.Add(animal);
                 _context.SaveChanges();
 
                 return RedirectToAction("Index");
                 
-            }
-            else
-            {
-                return View(animal);
-            }
+            //}
+            //else
+            //{
+            //    return View(animal);
+            //}
 
 
 
