@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VR00qOt7PKjQQGNlzNUOXTS0DTK6eRhw6nRUU4M5cqU=",
+  "Hash": "Czod/56W2QaQQ9mqzBO2KdGljZcQoXCa0+gS+vMezGM=",
   "Source": "PetFriends",
   "BasePath": "_content/PetFriends",
   "Mode": "Default",
@@ -1137,6 +1137,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\lib\\jquery-validation\\dist\\globalize.culture.pt-BR.js",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "lib/jquery-validation/dist/globalize.culture.pt-BR.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\globalize.culture.pt-BR.js"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\lib\\jquery-validation\\dist\\globalize.js",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "lib/jquery-validation/dist/globalize.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\globalize.js"
     },
     {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",

@@ -161,8 +161,28 @@
     <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var c = Globalize.culture().calendars.standard;
+            var fmt = c.patterns["d"];
+            $("#AvailableEndDateTimeUtc-parent").datetimepicker({ 
+                language: 'pt-BR', 
+                format: fmt,
+                pickDate: true, 
+                pickTime: false, 
+                pickSeconds: false, 
+                pick12HourFormat: false,
+                maskInput: true, 
+                collapse: true });
+        });
+        $('#AvailableEndDateTimeUtc-parent').change(function(){
+            // do your logic here
+        });
+        </script>
 
    @* <script src="/BMWebsite/Scripts/jquery.unobtrusive-ajax.js"></script>
     <script src="/BMWebsite/Scripts/jquery.validate.inline.js"></script>

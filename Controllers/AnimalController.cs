@@ -36,6 +36,10 @@ namespace PetFriends.Controllers
             ViewBag.Peso = Animal.Peso;
             ViewBag.IdLarTemporario = _context.LarTemporario;
             ViewBag.IdCausaFalecimento = _context.CausaFalecimento;
+            ViewBag.DataCadastro = Animal.DataCadastro;
+            ViewBag.DataDivulgacao = Animal.DataDivulgacao;
+            ViewBag.DataFalecimento = Animal.DataFalecimento;
+            ViewBag.DataResgate = Animal.DataResgate;
 
 
             return View(Animal);
