@@ -118,7 +118,7 @@ namespace PetFriends.Controllers
                 animal.data_falecimento = Model.data_falecimento;
                 animal.id_causa_falecimento = Model.id_causa_falecimento;*/
 
-                _context.SaveChanges();       
+                //_context.SaveChanges();       
 
 
                 // It will redirect to 
