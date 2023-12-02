@@ -11,6 +11,6 @@ namespace PetFriends.Models
         [DataType(DataType.Text)]
         [Required(ErrorMessage = "Cor do pelo do animal obrigatório")]
         [MaxLength(100)]
-        public String? CorPeloDesc { get; set; }
+        public String CorPeloDesc { get; set; }
     }
 }

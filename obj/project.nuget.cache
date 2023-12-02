@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mYsrVVhRc2gG9ZNtzIWFEJBQgJAhl7zKbyy4JzE/4VxRPoJAg5p+IH/+V+GuTuPr6u7UShvGkad+CZE5jB4HnA==",
+  "dgSpecHash": "3kOzzijQUGjGLwp1hxfqH9SJLVPRB07lNlykSD0zwzo+CCXQJ+pBnHGd0KL09IOQ1XEuJ+6qth2p4APjYO3FKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+  "projectFilePath": "C:\\Users\\yaeln\\Source\\Repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yaeln\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\yaeln\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -225,6 +225,12 @@
     "C:\\Users\\yaeln\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\yaeln\\Source\\Repos\\SI_AppSust_2o2023_Grp05\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",
