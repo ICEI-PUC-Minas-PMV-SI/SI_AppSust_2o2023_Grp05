@@ -4,6 +4,7 @@ using PetFriends.Models;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Web.WebPages.Html;
+using System.Linq;
 
 namespace PetFriends.Controllers
 {
@@ -40,6 +41,17 @@ namespace PetFriends.Controllers
             ViewBag.DataDivulgacao = Animal.DataDivulgacao;
             ViewBag.DataFalecimento = Animal.DataFalecimento;
             ViewBag.DataResgate = Animal.DataResgate;
+            
+            if(Animal.Foto == null)
+            {
+                Animal.Foto = "~/Images/logo.png";
+                ViewBag.Foto = Animal.Foto;
+            }
+            else
+            {
+                ViewBag.Foto = "~/Images/" + Animal.Foto;
+            }
+            
 
 
             return View(Animal);
@@ -70,7 +82,16 @@ namespace PetFriends.Controllers
         {
             //if (ModelState.IsValid)
             //{
-                _context.Add(animal);
+            if (animal.Foto == null)
+            {
+                animal.Foto = "~/Images/logo.png";
+            }
+            else
+            {
+                animal.Foto = "~/Images/" + animal.Foto;
+            }
+
+            _context.Add(animal);
                 _context.SaveChanges();
 
                 return RedirectToAction("Index");
