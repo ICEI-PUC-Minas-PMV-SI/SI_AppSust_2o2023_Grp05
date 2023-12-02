@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dHK456iAueT22GP4WxumS28z+RS3zx45nY8rR3Kl0qo=",
+  "Hash": "afN6THR6zHIGrwVs/5L8mXtr5kldoa/+Jws/Pgj8ugk=",
   "Source": "PetFriends",
   "BasePath": "_content/PetFriends",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\mario.png"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\panda.jpg",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "Images/panda.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\panda.jpg"
     },
     {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\sara.png",

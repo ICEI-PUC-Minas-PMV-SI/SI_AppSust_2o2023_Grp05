@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Grpc.Core;
+using Microsoft.AspNetCore.Mvc;
 using PetFriends.Data;
 using PetFriends.Models;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Web.WebPages.Html;
-using System.Linq;
+using System.Web;
 
 namespace PetFriends.Controllers
 {
@@ -49,11 +47,8 @@ namespace PetFriends.Controllers
             }
             else
             {
-                ViewBag.Foto = "~/Images/" + Animal.Foto;
+                ViewBag.Foto = "~/Images/" + Animal.Foto;                
             }
-            
-
-
             return View(Animal);
             /*
              * animal.IdTipoAnimal = Model.IdTipoAnimal;
@@ -92,17 +87,15 @@ namespace PetFriends.Controllers
             }
 
             _context.Add(animal);
-                _context.SaveChanges();
+            _context.SaveChanges();
 
-                return RedirectToAction("Index");
+            return RedirectToAction("Index");
                 
             //}
             //else
             //{
             //    return View(animal);
             //}
-
-
 
         }
 

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9hDb4ibUnBds4PA838SfkndSwQXy63QVaYz8brE1IE1RE6nPTeV2SWATv7zWninNr99YHZu9HiFAt3z5VAWrtg==",
+  "dgSpecHash": "YOx98l0zIXHcSlAT+6WPQiKHKjDFWa7ID2xvFemdy6qemL5znEZAkIN0cKSvWHtalq0jb+bFwut0MmoQMffV5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\bootstrap.datepicker\\1.8.0.1\\bootstrap.datepicker.1.8.0.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\bootstrap.datepicker.globalize\\1.0.0\\bootstrap.datepicker.globalize.1.0.0.nupkg.sha512",
+    "C:\\Users\\Sara Vidal\\.nuget\\packages\\grpc.core\\2.46.6\\grpc.core.2.46.6.nupkg.sha512",
+    "C:\\Users\\Sara Vidal\\.nuget\\packages\\grpc.core.api\\2.46.6\\grpc.core.api.2.46.6.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

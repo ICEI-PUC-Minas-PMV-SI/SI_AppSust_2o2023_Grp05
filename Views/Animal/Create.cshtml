@@ -25,9 +25,8 @@
                 <div class="form-group col-md-4 pb-0" style="width: 15%; float:left; margin-right:1%">                    
                     <center>
                         <img width="100" height="100" src="@Url.Content(@Model.Foto)" class="img-fluid rounded-start align-content-center">
-                        @Html.TextBoxFor(model => model.Foto, new { Type = "File" })
-                            
-                        </center>                    
+                        @Html.TextBoxFor(model => model.Foto, new { Type = "File", id="IdFoto" })                           
+                    </center>                    
                 </div>
                 <div class="row" style="width: 100%; font-size:12px;">                    
                     <div class="form-group col-md-4 pb-0">
@@ -41,22 +40,62 @@
                         @Html.ValidationMessageFor(model => model.NomeFinal, "", new { @class = "text-danger" })
                     </div>
                     <div class="form-group col-md-2 pb-0">
-                        @Html.LabelFor(model => model.TipoAnimal, htmlAttributes: new { @class = "control-label" })  
-                        @Html.DropDownListFor(model => model.IdTipoAnimal, new SelectList(ViewBag.IdTipoAnimal, "Id", "TipoDesc"), "Cão,Gato...", htmlAttributes: new { @class = "form-control form-select", @id = "TipoAnimal", @data_val="true", @required="required",@placeholder="Tipo do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" })
+                        @Html.LabelFor(model => model.IdTipoAnimal, htmlAttributes: new { @class = "control-label" })  
+                        <div class="input-group" id="grupoTipoAnimal" style="font-size:12px;">
+                            <button type="button" class="btn btn-primary" id="btnEditTipoAnimal" style="font-size:12px;" onclick="@("window.location.href='" + @Url.Action("Privacy", "Home") + "'");">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </button>
+                            @Html.DropDownListFor(model => model.IdTipoAnimal, new SelectList(ViewBag.IdTipoAnimal, "Id", "TipoDesc"), "Cão/Gato...", htmlAttributes: new { @class = "form-control form-select", @id ="TipoAnimal", @data_val="true", @required="required",@placeholder="Gênero aqui..." })
+                        </div>
                         @Html.ValidationMessageFor(model => model.IdTipoAnimal, "", new { @class = "text-danger" })
-                    </div>
+                    </div> 
+
+                    @*Placeholder pra raça do animal*@
+                    @*<div class="form-group col-md-2 pb-0">
+                        @Html.LabelFor(model => model.TipoAnimal, htmlAttributes: new { @class = "control-label" })  
+                        <div class="input-group" id="grupoTipoAnimal" style="font-size:12px;">
+                            <button type="button" class="btn btn-primary" id="btnEditTipoAnimal" style="font-size:12px;" onclick="@("window.location.href='" + @Url.Action("Privacy", "Home") + "'");">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </button>
+                            @Html.DropDownListFor(model => model.IdTipoAnimal, new SelectList(ViewBag.IdTipoAnimal, "Id", "TipoDesc"), "Cão/Gato...", htmlAttributes: new { @class = "form-control form-select", @id ="TipoAnimal", @data_val="true", @required="required",@placeholder="Gênero aqui..." })
+                        </div>
+                        @Html.ValidationMessageFor(model => model.IdTipoAnimal, "", new { @class = "text-danger" })
+                    </div> *@
                 </div>
                 <div class="row" style="font-size:12px;">
                     <div class="form-group col-md-2 pb-0">
                         @Html.LabelFor(model => model.Genero, htmlAttributes: new { @class = "control-label" })  
-                        @Html.DropDownListFor(model => model.IdGenero, new SelectList(ViewBag.IdGenero, "Id", "GeneroDesc"), "F/M", htmlAttributes: new { @class = "form-control form-select" , @id ="Genero", @data_val="true", @required="required",@placeholder="Tipo do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" })
+                        <div class="input-group" id="grupoGenero" style="font-size:12px;">
+                            <button type="button" class="btn btn-primary" id="btnEditGenero" style="font-size:12px;" onclick="@("window.location.href='" + @Url.Action("Privacy", "Home") + "'");">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </button>
+                            @Html.DropDownListFor(model => model.IdGenero, new SelectList(ViewBag.IdGenero, "Id", "GeneroDesc"), "P/M/G...", htmlAttributes: new { @class = "form-control form-select", @id ="Genero", @data_val="true", @required="required",@placeholder="Gênero aqui..." })
+                        </div>
                         @Html.ValidationMessageFor(model => model.IdGenero, "", new { @class = "text-danger" })
-                    </div>  
+                    </div> 
                     <div class="form-group col-md-2 pb-0">
                         @Html.LabelFor(model => model.Porte, htmlAttributes: new { @class = "control-label" })  
-                        @Html.DropDownListFor(model => model.IdPorte, new SelectList(ViewBag.IdPorte, "Id", "PorteDesc"), "P/M/G...", htmlAttributes: new { @class = "form-control form-select", @id ="Porte", @data_val="true", @required="required",@placeholder="Tipo do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" })
+                        <div class="input-group" id="grupoPorte" style="font-size:12px;">
+                            <button type="button" class="btn btn-primary" id="btnEditPorte" style="font-size:12px;" onclick="@("window.location.href='" + @Url.Action("Privacy", "Home") + "'");">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </button>
+                            @Html.DropDownListFor(model => model.IdPorte, new SelectList(ViewBag.IdPorte, "Id", "PorteDesc"), "P/M/G...", htmlAttributes: new { @class = "form-control form-select", @id ="Porte", @data_val="true", @required="required",@placeholder="Gênero aqui..." })
+                        </div>
                         @Html.ValidationMessageFor(model => model.IdPorte, "", new { @class = "text-danger" })
-                    </div>
+                    </div> 
+
                     <div class="form-group col-md-2 pb-0">
                         @Html.LabelFor(model => model.IdadeAnos, htmlAttributes: new { @class = "control-label" })                    
                         @Html.EditorFor(model => model.IdadeAnos, new { htmlAttributes = new { @class = "form-control",@placeholder="" } })
@@ -69,9 +108,18 @@
                     </div>
                     <div class="form-group col-md-2 pb-0">
                         @Html.LabelFor(model => model.CorPelo, htmlAttributes: new { @class = "control-label" })  
-                        @Html.DropDownListFor(model => model.IdCorPelo, new SelectList(ViewBag.IdCorPelo, "Id", "CorPeloDesc"), "P/M/G...", htmlAttributes: new { @class = "form-control form-select", @id ="CorPelo", @data_val="true", @required="required",@placeholder="Tipo do Pet aqui...",@oninvalid="this.setCustomValidity('Campo Obrigatório')" })
+                        <div class="input-group" id="grupoCorPelo" style="font-size:12px;">
+                            <button type="button" class="btn btn-primary" id="btnEditCorPelo" style="font-size:12px;" onclick="@("window.location.href='" + @Url.Action("Privacy", "Home") + "'");">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </button>
+                            @Html.DropDownListFor(model => model.IdCorPelo, new SelectList(ViewBag.IdCorPelo, "Id", "CorPeloDesc"), "P/M/G...", htmlAttributes: new { @class = "form-control form-select", @id ="CorPelo", @data_val="true", @required="required",@placeholder="Gênero aqui..." })
+                        </div>
                         @Html.ValidationMessageFor(model => model.IdCorPelo, "", new { @class = "text-danger" })
                     </div>
+                    
                     <div class="form-group col-md-2 pb-0">
                         @Html.LabelFor(model => model.Peso, htmlAttributes: new { @class = "control-label" })                    
                         @Html.EditorFor(model => model.Peso, new { htmlAttributes = new { @class = "form-control",@placeholder="ex: 5.3" } })
@@ -116,10 +164,19 @@
                     <div class="form-group col-md-1  pb-0">
                         @Html.LabelFor(model => model.Falecido, htmlAttributes: new { @class = "control-label" })                 
                         @Html.CheckBoxFor(model => model.Falecido, new { @id = "Falecido",@title = "Sim/Não", @data_toggle = "toggle", @data_on="Sim", @data_off="Não",@data_onstyle="success", @data_offstyle="danger"})
-                    </div> 
+                    </div>                     
                     <div class="form-group col-md-2 pb-0">
                         @Html.LabelFor(model => model.CausaFalecimento, htmlAttributes: new { @class = "control-label" })  
-                        @Html.DropDownListFor(model => model.IdCausaFalecimento, new SelectList(ViewBag.IdCausaFalecimento, "Id", "CausaDesc"), "Causa", htmlAttributes: new { @id = "CausaFalecimento", @class = "form-control form-select", @data_val="true",@placeholder="Tipo do Pet aqui..." })
+                        <div class="input-group" id="grupoCausaFalecimento" style="font-size:12px;">
+                            <button type="button" class="btn btn-primary" id="btnEditCausaFalecimento" style="font-size:12px;" onclick="@("window.location.href='" + @Url.Action("Privacy", "Home") + "'");">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </button>
+                            @Html.DropDownListFor(model => model.IdCausaFalecimento, new SelectList(ViewBag.IdCausaFalecimento, "Id", "CausaDesc"), "P/M/G...", htmlAttributes: new { @class = "form-control form-select", @id ="CausaFalecimento", @data_val="true",@placeholder="Gênero aqui..." })
+                        </div>
+                        @Html.ValidationMessageFor(model => model.IdCausaFalecimento, "", new { @class = "text-danger" })
                     </div>
                     <div class="form-group col-md-2 pb-0">
                         @Html.LabelFor(model => model.DataFalecimento, htmlAttributes: new { @class = "control-label" })  

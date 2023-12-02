@@ -12,7 +12,7 @@ namespace PetFriends.Models
 
         [Display(Name = "Meu Nome")]
         [DataType(DataType.Text)]
-        [Required(ErrorMessage = "Nome do pet é obrigatório")]
+        [Required(ErrorMessage = "* Nome do pet é obrigatório")]
         [MaxLength(100)]
         [StringLength(100)]
         public string Nome { get; set; }
@@ -24,19 +24,19 @@ namespace PetFriends.Models
         public String? NomeFinal { get; set; }
 
         [Display(Name = "Tipo")]
-        [Required(ErrorMessage = "Tipo do pet é obrigatório")]
+        [Required(ErrorMessage = "* Tipo do pet é obrigatório")]
         [ForeignKey("TipoAnimal")]
         public int IdTipoAnimal { get; set; }
         public virtual TipoAnimal TipoAnimal { get; set; }
 
         [Display(Name = "Gênero")]
-        [Required(ErrorMessage = "Gênero do pet é obrigatório")]
+        [Required(ErrorMessage = "* Gênero do pet é obrigatório")]
         [ForeignKey("Genero")]
         public int IdGenero { get; set; }
         public virtual Genero Genero { get; set; }
 
         [Display(Name = "Cor do pelo")]
-        [Required(ErrorMessage = "Cor do pelo do pet é obrigatório")]
+        [Required(ErrorMessage = "* Cor do pelo do pet é obrigatório")]
         [ForeignKey("CorPelo")]
         public int IdCorPelo { get; set; }
         public virtual CorPelo CorPelo { get; set; }
@@ -57,10 +57,11 @@ namespace PetFriends.Models
 
         [Display(Name = "Peso (kg)")]
         [Required(ErrorMessage = "Peso do pet é obrigatório")]
+        [Range(0, int.MaxValue, ErrorMessage = "Peso somente acima de 0.")]
         public double Peso { get; set; }
 
         [Display(Name = "Porte")]
-        [Required(ErrorMessage = "Porte do pet é obrigatório")]
+        [Required(ErrorMessage = "* Porte do pet é obrigatório")]
         [ForeignKey("Porte")]
         public int IdPorte { get; set; }
         public virtual Porte Porte { get; set; }
@@ -74,7 +75,7 @@ namespace PetFriends.Models
 
         [Display(Name = "História")]
         [DataType(DataType.MultilineText)]
-        [Required(ErrorMessage = "História do animal obrigatório")]
+        [Required(ErrorMessage = "* História do animal obrigatório")]
         [MaxLength(4000)]
         [StringLength(4000)]
         public String Historia { get; set; }
@@ -96,7 +97,7 @@ namespace PetFriends.Models
         public String? DataDivulgacao { get; set; }
 
         [Display(Name = "Lar Temporário")]
-        [Required(ErrorMessage = "Lar temporário do pet é obrigatório")]
+        [Required(ErrorMessage = "* Lar temporário do pet é obrigatório")]
         [ForeignKey("LarTemporario")]
         public int IdLarTemporario { get; set; }
         public virtual LarTemporario LarTemporario { get; set; }
