@@ -10878,19 +10878,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Everton\\.nuget\\packages\\": {}
+    "C:\\Users\\yaeln\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Everton\\source\\Repos\\ICEI-PUC-Minas-PMV-SI\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+      "projectUniqueName": "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
       "projectName": "PetFriends",
-      "projectPath": "C:\\Users\\Everton\\source\\Repos\\ICEI-PUC-Minas-PMV-SI\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
-      "packagesPath": "C:\\Users\\Everton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Everton\\source\\Repos\\ICEI-PUC-Minas-PMV-SI\\SI_AppSust_2o2023_Grp05\\obj\\",
+      "projectPath": "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+      "packagesPath": "C:\\Users\\yaeln\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Everton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yaeln\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

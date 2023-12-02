@@ -36,8 +36,12 @@ namespace PetFriends.Models
         public virtual Genero Genero { get; set; }
 
         [Display(Name = "Cor do pelo")]
+        [DataType(DataType.Text)]
         [Required(ErrorMessage = "Cor do pelo do pet é obrigatório")]
+        [MaxLength(100)]
+        [StringLength(100)]
         [ForeignKey("CorPelo")]
+
         public int IdCorPelo { get; set; }
         public virtual CorPelo CorPelo { get; set; }
         
