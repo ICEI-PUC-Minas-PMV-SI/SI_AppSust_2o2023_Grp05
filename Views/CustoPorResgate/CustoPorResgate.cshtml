@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Custo por Resgate";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p><b>Cadastro de resgates</b></p>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Ação</th>
+            <th>Custo Macho</th>
+            <th>Custo Femea</th>
+            <th>Data de Cadastro</th>
+            <th>Ativo</th>
+
+        </tr>
+    </thead>
+
+    <p><b>Açoes para resgate(Procedimento padrão)</b></p>
+    <tbody>
+        @{
+            foreach (var a in (List<PetFriends.Models.CustoPorResgate>)ViewBag.users)
+            {
+                <tr>
+                    <td>@a.Id</td>
+                    <td>@a.Acao</td>
+                    <td>@a.CustoMacho</td>
+                    <td>@a.CustoFemea</td>
+                    <td>@a.DataCadastro</td>
+                    <td>@a.Ativo</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

@@ -34,16 +34,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/ConexaoEverton/ConexaoEverton.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZXhhb0V2ZXJ0b25cQ29uZXhhb0V2ZXJ0b24uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/ConexaoTest/conexaotestlist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZXhhb1Rlc3RcY29uZXhhb3Rlc3RsaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/CorPelo/CorPelo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29yUGVsb1xDb3JQZWxvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/CustoPorResgate/CustoPorResgate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9Qb3JSZXNnYXRlXEN1c3RvUG9yUmVzZ2F0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Home/Index.cshtml]

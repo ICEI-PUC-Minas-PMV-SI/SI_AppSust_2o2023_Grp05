@@ -3,16 +3,16 @@ using PetFriends.Data;
 
 namespace PetFriends.Controllers
 {
-    public class ConexaoEvertonController : Controller
+    public class CustoPorResgateController : Controller
     {
         private readonly ApplicationContext _context;
-        public ConexaoEvertonController(ApplicationContext context)
+        public CustoPorResgateController(ApplicationContext context)
         {
             _context = context;
         }
-        public IActionResult ConexaoEverton()
+        public IActionResult CustoPorResgate()
         {
-            ViewBag.users = _context.ConexaoEverton.ToList();
+            ViewBag.users = _context.CustoPorResgate.ToList();
             return View();
         }
     }

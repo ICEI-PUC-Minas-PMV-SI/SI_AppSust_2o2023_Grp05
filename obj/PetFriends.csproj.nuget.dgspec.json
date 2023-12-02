@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {}
+    "C:\\Users\\Everton\\source\\Repos\\ICEI-PUC-Minas-PMV-SI\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {
+    "C:\\Users\\Everton\\source\\Repos\\ICEI-PUC-Minas-PMV-SI\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+        "projectUniqueName": "C:\\Users\\Everton\\source\\Repos\\ICEI-PUC-Minas-PMV-SI\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
         "projectName": "PetFriends",
-        "projectPath": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
-        "packagesPath": "C:\\Users\\Sara Vidal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\obj\\",
+        "projectPath": "C:\\Users\\Everton\\source\\Repos\\ICEI-PUC-Minas-PMV-SI\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+        "packagesPath": "C:\\Users\\Everton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Everton\\source\\Repos\\ICEI-PUC-Minas-PMV-SI\\SI_AppSust_2o2023_Grp05\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Sara Vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Everton\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,7 +91,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -107,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
