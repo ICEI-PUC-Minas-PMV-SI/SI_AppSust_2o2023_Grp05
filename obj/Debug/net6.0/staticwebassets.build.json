@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "afN6THR6zHIGrwVs/5L8mXtr5kldoa/+Jws/Pgj8ugk=",
+  "Hash": "w0QcCQCU4EdAKVf1g06vi7sP5Tabw2TZrUJo7Axo0So=",
   "Source": "PetFriends",
   "BasePath": "_content/PetFriends",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\bulldog.jpg",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "Images/bulldog.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\bulldog.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\logo.png",
       "SourceId": "PetFriends",
       "SourceType": "Discovered",
@@ -136,6 +153,40 @@
       "OriginalItemSpec": "wwwroot\\Images\\mario.png"
     },
     {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\mini-pincher.jpg",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "Images/mini-pincher.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\mini-pincher.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\mouse.png",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "Images/mouse.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\mouse.png"
+    },
+    {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\panda.jpg",
       "SourceId": "PetFriends",
       "SourceType": "Discovered",
@@ -153,12 +204,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\panda.jpg"
     },
     {
-      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\sara.png",
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\rottweiler.jpg",
       "SourceId": "PetFriends",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
       "BasePath": "_content/PetFriends",
-      "RelativePath": "Images/sara.png",
+      "RelativePath": "Images/rottweiler.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,7 +218,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\sara.png"
+      "OriginalItemSpec": "wwwroot\\Images\\rottweiler.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\sharpei.webp",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "Images/sharpei.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\sharpei.webp"
     },
     {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\wwwroot\\Images\\test.png",
