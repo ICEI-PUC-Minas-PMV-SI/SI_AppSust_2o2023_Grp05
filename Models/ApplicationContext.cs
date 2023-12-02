@@ -13,7 +13,6 @@ namespace PetFriends.Data
         {
             modelBuilder.UseSerialColumns();
         }
-        public DbSet<ConexaoTest> ConexaoTest { get; set; }
 
         public DbSet<Animal> Animal { get; set; }
 
