@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {}
+    "C:\\Users\\Sara Vidal\\Desktop\\PF\\PetFriends.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {
+    "C:\\Users\\Sara Vidal\\Desktop\\PF\\PetFriends.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+        "projectUniqueName": "C:\\Users\\Sara Vidal\\Desktop\\PF\\PetFriends.csproj",
         "projectName": "PetFriends",
-        "projectPath": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+        "projectPath": "C:\\Users\\Sara Vidal\\Desktop\\PF\\PetFriends.csproj",
         "packagesPath": "C:\\Users\\Sara Vidal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\obj\\",
+        "outputPath": "C:\\Users\\Sara Vidal\\Desktop\\PF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

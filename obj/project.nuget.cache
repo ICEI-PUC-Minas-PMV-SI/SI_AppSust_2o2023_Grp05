@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y5zcqxrXDoYzXyRljLdjiJiq6pqSO/u8AXFkWcuSF+qZltTi7mpaP7aSq1EHzjBjSu814+S70aXfiSYdyraQ6A==",
+  "dgSpecHash": "rUQ7azggvr6eKEaso6EXzU6BphUdMM3lHBMIjvHaTgfEQSdCLjr1QuKpw7md7kXo5gUQqjfERynT8113M0IWpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sara Vidal\\Desktop\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+  "projectFilePath": "C:\\Users\\Sara Vidal\\Desktop\\PF\\PetFriends.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Sara Vidal\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
