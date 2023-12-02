@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PetFriends.Models
@@ -11,47 +12,56 @@ namespace PetFriends.Models
 
         [Display(Name = "Meu Nome")]
         [DataType(DataType.Text)]
-        [Required(ErrorMessage = "Nome animal obrigatório")]
+        [Required(ErrorMessage = "Nome do pet é obrigatório")]
         [MaxLength(100)]
-        public String Nome { get; set; }
+        [StringLength(100)]
+        public string Nome { get; set; }
 
         [Display(Name = "Nome Final")]
         [DataType(DataType.Text)]
         [MaxLength(100)]
+        [StringLength(100)]
         public String? NomeFinal { get; set; }
 
         [Display(Name = "Tipo")]
+        [Required(ErrorMessage = "Tipo do pet é obrigatório")]
         [ForeignKey("TipoAnimal")]
-        public int IdTipoAnimal{ get; set; }
-
+        public int IdTipoAnimal { get; set; }
         public virtual TipoAnimal TipoAnimal { get; set; }
 
         [Display(Name = "Gênero")]
+        [Required(ErrorMessage = "Gênero do pet é obrigatório")]
         [ForeignKey("Genero")]
         public int IdGenero { get; set; }
         public virtual Genero Genero { get; set; }
 
         [Display(Name = "Cor do pelo")]
+        [Required(ErrorMessage = "Cor do pelo do pet é obrigatório")]
         [ForeignKey("CorPelo")]
         public int IdCorPelo { get; set; }
         public virtual CorPelo CorPelo { get; set; }
-
-        [DataType(DataType.Text)]
+        
+        [Display(Name = "Data do Resgate")]
+        [BindProperty, DataType(DataType.Date)]
+        [Required(ErrorMessage = "Data do Resgate do pet é obrigatório")]
+        [MaxLength(10)]
+        [StringLength(10)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
-        public String? DataResgate { get; set; }
+        public DateTime DataResgate { get; set; }
 
-        [Range(int.MinValue, 0)]
+        [Range(0, int.MaxValue)]
         public int? IdadeAnos { get; set; }
 
-        [Range(int.MinValue, 0)]
+        [Range(0, int.MaxValue)]
         public int? IdadeMeses { get; set; }
 
         [Display(Name = "Peso (kg)")]
-        [Required(ErrorMessage = "Peso obrigatório")]
+        [Required(ErrorMessage = "Peso do pet é obrigatório")]
         public double Peso { get; set; }
 
         [Display(Name = "Porte")]
+        [Required(ErrorMessage = "Porte do pet é obrigatório")]
         [ForeignKey("Porte")]
         public int IdPorte { get; set; }
         public virtual Porte Porte { get; set; }
@@ -63,42 +73,49 @@ namespace PetFriends.Models
         [MaxLength(255)]
         public String? Foto { get; set; }
 
+        [Display(Name = "História")]
+        [DataType(DataType.MultilineText)]
         [Required(ErrorMessage = "História do animal obrigatório")]
-        [DataType(DataType.Text)]
         [MaxLength(4000)]
+        [StringLength(4000)]
         public String Historia { get; set; }
-
-        [Required(ErrorMessage = "Porte do animal obrigatório")]
         public int IdProcedimentoPadrao { get; set; }
 
-        [DataType(DataType.Text)]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
-        [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
-        public String? DataCadastro { get; set; }
-
-        [DataType(DataType.Text)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [Display(Name = "Data do Cadastro")]
+        [DataType(DataType.Date)]
+        [Required(ErrorMessage = "Data do Cadastro do pet é obrigatório")]
         [MaxLength(10)]
+        [StringLength(10)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
-        public String? DataDivulgacao { get; set; }
+        public DateTime DataCadastro { get; set; }
 
-        
-        [Display(Name = "Lar Temporario")]
+        [Display(Name = "Data da Divulgacao")]
+        [BindProperty, DataType(DataType.Date)]
+        [MaxLength(10)]
+        [StringLength(10)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
+        public DateTime? DataDivulgacao { get; set; }
+
+        [Display(Name = "Lar Temporário")]
+        [Required(ErrorMessage = "Lar temporário do pet é obrigatório")]
         [ForeignKey("LarTemporario")]
         public int IdLarTemporario { get; set; }
         public virtual LarTemporario LarTemporario { get; set; }
         public double? DespesaMensal { get; set; }
-
         public bool Falecido { get; set; }
 
-        [DataType(DataType.Text)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [Display(Name = "Data do Falecimento")]
+        [BindProperty, DataType(DataType.Date)]
         [MaxLength(10)]
+        [StringLength(10)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [RegularExpression(@"/(0[1-9]|1[012])[- \/.](0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d/")]
-        public String? DataFalecimento { get; set; }
-
+        public DateTime? DataFalecimento { get; set; }
 
         [Display(Name = "Causa Falecimento")]
+        [DataType(DataType.Text)]
         [ForeignKey("CausaFalecimento")]
         public int? IdCausaFalecimento { get; set; }
         public virtual CausaFalecimento CausaFalecimento { get; set; }

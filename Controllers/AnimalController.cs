@@ -2,6 +2,7 @@
 using PetFriends.Data;
 using PetFriends.Models;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Web.WebPages.Html;
 
 namespace PetFriends.Controllers
@@ -13,7 +14,7 @@ namespace PetFriends.Controllers
         {
             _context = context;
         }
-
+        
         public ActionResult Index()
         {
             return View(_context.Animal.ToList());
@@ -21,8 +22,7 @@ namespace PetFriends.Controllers
 
         [HttpGet]
         public ActionResult Create()
-        {
-          
+        {          
             Animal Animal = new Animal();
             
             ViewBag.Nome = Animal.Nome;
@@ -64,9 +64,21 @@ namespace PetFriends.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Animal animal)
         {
-            _context.Add(animal);
-            _context.SaveChanges();
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                _context.Add(animal);
+                _context.SaveChanges();
+
+                return RedirectToAction("Index");
+                
+            }
+            else
+            {
+                return View(animal);
+            }
+
+
+
         }
 
 

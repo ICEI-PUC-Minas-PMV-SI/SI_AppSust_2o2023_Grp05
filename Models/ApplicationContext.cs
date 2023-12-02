@@ -30,5 +30,8 @@ namespace PetFriends.Data
         public DbSet<LarTemporario> LarTemporario { get; set; }
 
         public DbSet<CausaFalecimento> CausaFalecimento { get; set; }
+
+        public DbSet<CustoPorResgate> CustoPorResgate { get; set; }
+        public DbSet<Despesas> Despesas { get; set; }
     }
 }
