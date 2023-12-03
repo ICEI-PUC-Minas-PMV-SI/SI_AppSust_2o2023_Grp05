@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yaeln\\Source\\Repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {}
+    "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yaeln\\Source\\Repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {
+    "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yaeln\\Source\\Repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+        "projectUniqueName": "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
         "projectName": "PetFriends",
-        "projectPath": "C:\\Users\\yaeln\\Source\\Repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
+        "projectPath": "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\PetFriends.csproj",
         "packagesPath": "C:\\Users\\yaeln\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yaeln\\Source\\Repos\\SI_AppSust_2o2023_Grp05\\obj\\",
+        "outputPath": "C:\\Users\\yaeln\\source\\repos\\SI_AppSust_2o2023_Grp05\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yaeln\\AppData\\Roaming\\NuGet\\NuGet.Config",
