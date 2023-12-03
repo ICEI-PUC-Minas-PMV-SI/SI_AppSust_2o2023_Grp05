@@ -34,6 +34,8 @@ namespace PetFriends.Data
         public DbSet<CustoPorResgate> CustoPorResgate { get; set; }
         
         public DbSet<Despesas> Despesas { get; set; }
+
+        public DbSet<Adocao> Adocao { get; set; }
     }
 }
 
