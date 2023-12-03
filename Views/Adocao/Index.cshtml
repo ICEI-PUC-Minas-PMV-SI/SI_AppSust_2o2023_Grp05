@@ -1,0 +1,67 @@
+﻿@page
+@model PetFriends.Views.Adocao.adocaoModel
+@{
+}
+
+<head>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+</head>
+<body>
+<form>
+    <div>
+       
+    </div>
+</form>
+<div class="col-md-12" style="padding:5px;">
+    <div class="row">    
+        <div class="col-md-12" style="width: 100%; float:right;">
+            <form class="form-control" style="font-size:12px;">  
+                <h2 style="padding:20px;">Nova Adoção</h2>
+                <div class="col-md-2" style="width: 15%; float:left; margin-right:1%">
+                </div>            
+                <div class="row" style="font-size:12px;">
+                    <div class="col-md-2">
+                        <label for="idAnimal" class="form-label">Animal</label>
+                        <select class="form-select" id="idAnimal" style="font-size:12px;">
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="idAdotante" class="form-label">Adotante</label>
+                        <select class="form-select" id="idAdotante" style="font-size:12px;"></select>
+                    </div>
+                    <div class="col-md-4 was-validated">
+                        <label for="dataResgate" class="form-label">Data da Adoção</label>
+                        <input type="text" class="form-control border border-secondary" id="dataAdocao" required placeholder="dd/mm/aaaa" style="font-size:12px;">
+                    </div>
+                    <p></p>
+
+                    <div class="col-md-4">
+                        <label for="termo" class="form-label">Termo</label>
+                        <input type="text" class="form-control border-bottom border-secondary" id="termo" placeholder="." required style="font-size:12px;"></input>
+                    </div>
+                    <p></p>
+
+                    <div class="col-md-8">
+                        <label for="MotivoAdocao" style="width:100%" class="form-label">Motivo da Adoção:</label>
+                        <textarea class="form-control" id="MotivoAdocao" placeholder="." required style="font-size:12px;"></textarea>
+                    </div>
+                    <p></p>
+                    <div class="col-md-2">
+                        <input type="file" class="form-control" id="ImagemAdocao" placeholder="Carregar Foto"></input>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label">Divulgado no grupo de apoiadores</label>
+                        </div>
+                    </div>
+                    <p></p>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary" type="submit">Salvar</button>
+                        </div>
+                        
+                </form>
+                    
+        
+
+</body>
