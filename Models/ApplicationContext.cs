@@ -17,6 +17,9 @@ namespace PetFriends.Data
 
         public DbSet<Animal> Animal { get; set; }
 
+        public DbSet<Adocao> Adocao { get; set; }
+
+
         public DbSet<Genero> Genero { get; set; }
 
         public DbSet<TipoAnimal> TipoAnimal { get; set; }
