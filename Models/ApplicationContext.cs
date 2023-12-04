@@ -13,8 +13,6 @@ namespace PetFriends.Data
         {
             modelBuilder.UseSerialColumns();
         }
-        public DbSet<ConexaoTest> ConexaoTest { get; set; }
-
         public DbSet<Animal> Animal { get; set; }
 
         public DbSet<Genero> Genero { get; set; }
@@ -36,6 +34,7 @@ namespace PetFriends.Data
         public DbSet<Despesas> Despesas { get; set; }
 
         public DbSet<Adocao> Adocao { get; set; }
+        public DbSet<PadrinhoDoador> PadrinhoDoadorModel { get; set; }
     }
 }
 
