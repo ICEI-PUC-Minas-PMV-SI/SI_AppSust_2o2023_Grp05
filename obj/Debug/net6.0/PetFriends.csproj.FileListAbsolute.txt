@@ -782,15 +782,6 @@ C:\Users\Everton\source\Repos\ICEI-PUC-Minas-PMV-SI\SI_AppSust_2o2023_Grp05\obj\
 C:\Users\Everton\source\Repos\ICEI-PUC-Minas-PMV-SI\SI_AppSust_2o2023_Grp05\obj\Debug\net6.0\PetFriends.csproj.CopyComplete
 C:\Users\Everton\source\Repos\ICEI-PUC-Minas-PMV-SI\SI_AppSust_2o2023_Grp05\obj\Debug\net6.0\PetFriends.genruntimeconfig.cache
 C:\Users\Everton\source\Repos\ICEI-PUC-Minas-PMV-SI\SI_AppSust_2o2023_Grp05\obj\Debug\net6.0\ref\PetFriends.dll
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.csproj.AssemblyReference.cache
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.AssemblyInfoInputs.cache
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.AssemblyInfo.cs
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.csproj.CoreCompileInputs.cache
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.RazorAssemblyInfo.cache
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.RazorAssemblyInfo.cs
 C:\Users\Sara Vidal\Desktop\PF\bin\Debug\net6.0\appsettings.json
 C:\Users\Sara Vidal\Desktop\PF\bin\Debug\net6.0\PetFriends.staticwebassets.runtime.json
 C:\Users\Sara Vidal\Desktop\PF\bin\Debug\net6.0\PetFriends.exe
@@ -1017,6 +1008,15 @@ C:\Users\Sara Vidal\Desktop\PF\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.
 C:\Users\Sara Vidal\Desktop\PF\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Sara Vidal\Desktop\PF\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Sara Vidal\Desktop\PF\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.csproj.AssemblyReference.cache
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.AssemblyInfoInputs.cache
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.AssemblyInfo.cs
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.csproj.CoreCompileInputs.cache
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.RazorAssemblyInfo.cache
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.RazorAssemblyInfo.cs
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
