@@ -8,7 +8,6 @@ namespace PetFriends.Data
         public ApplicationContext(DbContextOptions<ApplicationContext> options):base(options)
         {
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.UseSerialColumns();
@@ -32,6 +31,9 @@ namespace PetFriends.Data
         public DbSet<CustoPorResgate> CustoPorResgate { get; set; }
         
         public DbSet<DespesaFixa> DespesaFixa { get; set; }
+
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<TipoUsuario> TipoUsuario { get; set; }
 
         //public DbSet<Adocao> Adocao { get; set; }
         //public DbSet<PadrinhoDoador> PadrinhoDoador { get; set; }

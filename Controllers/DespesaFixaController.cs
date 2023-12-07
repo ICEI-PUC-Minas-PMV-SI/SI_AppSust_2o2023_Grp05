@@ -18,7 +18,6 @@ namespace PetFriends.Controllers
             return View(_context.DespesaFixa.ToList());
         }
 
-        //debugar
         [HttpGet]
         public ActionResult Create()
         {
@@ -70,7 +69,7 @@ namespace PetFriends.Controllers
                 return View();
         }
 
-        // POST: /Animal/Delete/id//sd
+        // POST: /Animal/Delete/id/
         public ActionResult Delete(int id)
         {
             var despesaFixa = _context.DespesaFixa.Where(d => d.Id == id).FirstOrDefault();
