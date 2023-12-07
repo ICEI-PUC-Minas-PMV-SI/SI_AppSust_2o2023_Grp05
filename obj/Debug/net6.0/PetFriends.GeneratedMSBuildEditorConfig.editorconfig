@@ -39,8 +39,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9Qb3JSZXNnYXRlXEN1c3RvUG9yUmVzZ2F0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Despesas/Despesas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRGVzcGVzYXMuY3NodG1s
+[C:/Users/Sara Vidal/Desktop/PF/Views/DespesaFixa/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYUZpeGFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sara Vidal/Desktop/PF/Views/DespesaFixa/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYUZpeGFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sara Vidal/Desktop/PF/Views/DespesaFixa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYUZpeGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Sara Vidal/Desktop/PF/Views/Home/Index.cshtml]
