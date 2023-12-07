@@ -31,8 +31,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/CorPelo/CorPelo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29yUGVsb1xDb3JQZWxvLmNzaHRtbA==
+[C:/Users/Sara Vidal/Desktop/PF/Views/CorPelo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29yUGVsb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sara Vidal/Desktop/PF/Views/CorPelo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29yUGVsb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sara Vidal/Desktop/PF/Views/CorPelo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29yUGVsb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Sara Vidal/Desktop/PF/Views/CustoPorResgate/Create.cshtml]

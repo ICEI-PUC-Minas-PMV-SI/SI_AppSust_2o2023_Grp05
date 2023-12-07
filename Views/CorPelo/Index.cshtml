@@ -1,0 +1,45 @@
+﻿
+@model  List<PetFriends.Models.CorPelo>
+
+@{
+    ViewData["Title"] = "Cor Pelo";
+}
+
+<div class="container justify-content-sm-center g-10" style="padding:5px;">
+    <form>
+        <div style="font-size:20px;">@ViewData["Title"]</div>
+    </form>         
+    <form class="form-control">
+        <div class="row pb-1">            
+            <table style="justify-content:center;border:1px solid #aaaaaa;border-collapse: collapse; width: 100%;margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">#</th>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Cor do Pelo</th>
+                    </tr>
+                </thead>
+                <p><b>Lista de todas as despesas</b></p>
+                <tbody>
+                    @{foreach (var c in Model)
+                        {
+                            <tr>
+                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@c.Id</td>
+                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@c.CorPeloDesc</td>
+                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px; width: 25px">
+                                    @Html.ActionLink("EDITAR", "Edit", new { id = c.Id}, new { id = @"id",style = "color: blue" })    
+                                </td>
+                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px; width: 25px">                                        
+                                    @Html.ActionLink("DELETAR", "Delete", new { id = c.Id}, new {@class = "glyphicon glyphicon-trash", id = @"id",style = "color: red",onclick = "return confirm('Are you sure you wish to delete this article?');" })
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>                     
+        </div>
+    </form>
+    <div class="col-md-6">            
+        @Html.ActionLink("Cadastrar Cor", "Create", new {style = "color: white" })            
+    </div>
+</div>
+
