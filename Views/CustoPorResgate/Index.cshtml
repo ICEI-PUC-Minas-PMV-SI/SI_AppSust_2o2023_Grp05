@@ -1,56 +1,53 @@
-﻿
-@model  List<PetFriends.Models.CustoPorResgate>
+﻿@model List<PetFriends.Models.CustoPorResgate>
 
 @{
-    ViewData["Title"] = "Custo por resgate";
+    ViewData["Title"] = "Lista de todos os custos por resgate";
 }
 
 <div class="container justify-content-sm-center g-10" style="padding:5px;">
     <form>
-        <div style="font-size:20px;">@ViewData["Title"]</div>
-    </form>         
+        <h2>@ViewData["Title"]</h2>
+    </form>
     <form class="form-control">
-        <div class="row pb-1">            
-            <table style="; justify-content:center;border:1px solid #aaaaaa;border-collapse: collapse; width: 100%;margin-top: 20px;">
+        <div class="row pb-1">
+            <table style="justify-content:center; border:1px solid #aaaaaa; border-collapse: collapse; width: 100%; margin-top: 20px;">
                 <thead>
                     <tr>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">#</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Ação</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Custo Macho</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Custo Fêmea</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Data do Cadastro</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Ativo?</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Editar</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Excluir</th>
-
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">#</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Ação</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Custo Macho</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Custo Fêmea</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Data do Cadastro</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Ativo?</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Editar</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Excluir</th>
                     </tr>
                 </thead>
-                <p><b>Lista de todas as despesas</b></p>
+                @*<p><b>Lista de todos os custos por resgate</b></p>*@
                 <tbody>
-                    @{foreach (var c in Model)
-                        {
-                            <tr>
-                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@c.Id</td>
-                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@c.Acao</td>
-                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@string.Format("R$ {0:N2}", c.CustoMacho)</td>
-                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@string.Format("R$ {0:N2}", c.CustoFemea)</td>
-                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@c.DataCadastro</td>
-                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@(c.Ativo ? "Sim" : "Não")</td>
-                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px; width: 25px">
-                                    @Html.ActionLink("EDITAR", "Edit", new { id = c.Id}, new { id = @"id",style = "color: blue" })    
-                                </td>
-                                <td style="border: 1px solid #dddddd;text-align: left;padding: 8px; width: 25px">                                        
-                                    @Html.ActionLink("DELETAR", "Delete", new { id = c.Id}, new {@class = "glyphicon glyphicon-trash", id = @"id",style = "color: red",onclick = "return confirm('Are you sure you wish to delete this article?');" })
-                                </td>
-                            </tr>
-                        }
+                    @foreach (var c in Model)
+                    {
+                        <tr>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@c.Id</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@c.Acao</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@string.Format("R$ {0:N2}", c.CustoMacho)</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@string.Format("R$ {0:N2}", c.CustoFemea)</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@c.DataCadastro</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@(c.Ativo ? "Sim" : "Não")</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px; width: 25px">
+                                @Html.ActionLink("EDITAR", "Edit", new { id = c.Id }, new { @class = "btn", style = "background-color: #32CD32; color: white;" })
+                            </td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px; width: 25px">
+                                @Html.ActionLink("DELETAR", "Delete", new { id = c.Id }, new { @class = "btn", style = "background-color: #FF4500; color: white;", onclick = "return confirm('Você tem certeza que deseja deletar essa despesa?');" })
+                                <br />
+                            </td>
+                        </tr>
                     }
                 </tbody>
-            </table>                     
+            </table>
         </div>
     </form>
-    <div class="col-md-6">            
-        @Html.ActionLink("Criar Despesa", "Create", new {style = "color: white" })            
+    <div class="col-md-6">
+        @Html.ActionLink("Criar resgate", "Create", new { @class = "btn", style = "background-color: #008080; color: white;" })
     </div>
 </div>
-

@@ -5,120 +5,123 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PetFriends
 build_property.RootNamespace = PetFriends
-build_property.ProjectDir = C:\Users\Sara Vidal\Desktop\PF\
+build_property.ProjectDir = C:\Users\Everton\source\Repos\ICEI-PUC-Minas-PMV-SI\SI_AppSust_2o2023_Grp05\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Sara Vidal\Desktop\PF
+build_property.MSBuildProjectDirectory = C:\Users\Everton\source\Repos\ICEI-PUC-Minas-PMV-SI\SI_AppSust_2o2023_Grp05
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Adocao/Index.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Adocao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvY2FvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Animal/Create.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Animal/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Animal/Edit.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Animal/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Animal/Index.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Animal/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/CorPelo/Create.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/CorPelo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29yUGVsb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/CorPelo/Edit.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/CorPelo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29yUGVsb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/CorPelo/Index.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/CorPelo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29yUGVsb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/CustoPorResgate/Create.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/CustoPorResgate/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9Qb3JSZXNnYXRlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/CustoPorResgate/Edit.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/CustoPorResgate/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9Qb3JSZXNnYXRlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/CustoPorResgate/Index.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/CustoPorResgate/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9Qb3JSZXNnYXRlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/DespesaFixa/Create.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/DespesaFixa/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYUZpeGFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/DespesaFixa/Edit.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/DespesaFixa/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYUZpeGFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/DespesaFixa/Index.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/DespesaFixa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYUZpeGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Home/Index.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Home/Privacy.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/PadrinhoDoador/CriarEditarExcluirPadrinhosDoadores.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/PadrinhoDoador/CriarEditarExcluirPadrinhosDoadores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFkcmluaG9Eb2Fkb3JcQ3JpYXJFZGl0YXJFeGNsdWlyUGFkcmluaG9zRG9hZG9yZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/PadrinhoDoador/ListaPadrinhosDoadores.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/PadrinhoDoador/ListaPadrinhosDoadores.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFkcmluaG9Eb2Fkb3JcTGlzdGFQYWRyaW5ob3NEb2Fkb3Jlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/PadrinhoDoador/ViewPadrinhoDoador.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/PadrinhoDoador/ViewPadrinhoDoador.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFkcmluaG9Eb2Fkb3JcVmlld1BhZHJpbmhvRG9hZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Shared/Error.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Usuario/Create.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Usuario/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Usuario/Edit.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Usuario/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Usuario/Index.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/_ViewImports.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/_ViewStart.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/_Layout.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = X0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sara Vidal/Desktop/PF/Views/Shared/_Layout.cshtml]
+[C:/Users/Everton/source/Repos/ICEI-PUC-Minas-PMV-SI/SI_AppSust_2o2023_Grp05/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2ueu770tn4

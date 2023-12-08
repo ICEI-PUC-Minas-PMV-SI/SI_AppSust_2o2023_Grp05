@@ -3,7 +3,7 @@
     ViewData["Title"] = "Criar Perfil do Pet";
     var foto = @Model.Foto;
 }
-<div style="font-size:20px;">@ViewData["Title"]</div>
+<h2>@ViewData["Title"]</h2>
 
 <head>
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
@@ -192,16 +192,17 @@
             </div>
         </div>
         <div class="row">
-            <p class="form-group">
-                <p class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Save" class="btn btn-primary" />
-                </p>
-            </p>
+            <div class="form-group">
+                <div class="col-md-12 mb-3">
+                    <button type="submit" class="btn btn-primary" style="background-color: #32CD32; color: white; margin-top: 10px;">SALVAR</button>
+                </div>
+            </div>
         </div>
+
     }
 
     <p>
-        @Html.ActionLink("Back to List", "Index")
+        @Html.ActionLink("Voltar para lista", "Index")
     </p>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
