@@ -1019,7 +1019,7 @@ C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.RazorAssemblyInfo.cac
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.RazorAssemblyInfo.cs
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutAntesLogin.cshtml.rz.scp.css
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\scopedcss\bundle\PetFriends.styles.css
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\scopedcss\projectbundle\PetFriends.bundle.scp.css
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.csproj.CopyComplete
@@ -1028,3 +1028,4 @@ C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\refint\PetFriends.dll
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.pdb
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.genruntimeconfig.cache
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\ref\PetFriends.dll
+C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

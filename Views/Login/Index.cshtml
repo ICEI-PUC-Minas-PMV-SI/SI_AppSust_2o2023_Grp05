@@ -1,0 +1,56 @@
+﻿@model PetFriends.Models.Login
+@{
+    ViewData["Title"] = "Área somente para funcionários";
+}
+<center>
+    <h2 class="text-light">@ViewData["Title"]</h2>
+</center>
+ 
+<head>
+    <link rel="stylesheet" href="~/css/styleLogin.css" asp-append-version="true" />
+</head>
+<body>
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))  
+{  
+   @Html.AntiForgeryToken() 
+   @Html.ValidationSummary(true)  
+   if (@ViewBag.Message != null)  
+   {  
+  
+      <div style="border:1px solid red">  
+         @ViewBag.Message  
+      </div>  
+   }  
+    <div class="form-group" style="width: 100%;height:80%">
+        <center>
+        <div class="form-control pb-2" style="width:40%;">                    
+            <div class="container" id="section1">
+                <div class="row" style="font-size:12px;">
+                    
+                    <div class="form-group">
+                        <div class="form-group col-md-5 pb-2">
+                            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+                            @Html.TextBoxFor(model => model.Email)
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "invalid-feedback" })
+                        </div>
+                        <div class="form-group col-md-5 pb-2">
+                            @Html.LabelFor(model => model.Senha, htmlAttributes: new { @class = "control-label" })
+                            @Html.PasswordFor(model => model.Senha)
+                            @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "invalid-feedback" })
+                        </div>
+                        <div class="form-group col-md-5 pb-2">
+                            <input type="submit" value="Login" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </center>
+    </div>
+} 
+</body>
+
+
+
+  
