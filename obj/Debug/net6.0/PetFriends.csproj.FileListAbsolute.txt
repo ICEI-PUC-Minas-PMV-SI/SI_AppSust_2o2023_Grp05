@@ -1029,3 +1029,4 @@ C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.pdb
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\PetFriends.genruntimeconfig.cache
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\ref\PetFriends.dll
 C:\Users\Sara Vidal\Desktop\PF\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Everton\source\Repos\ICEI-PUC-Minas-PMV-SI\SI_AppSust_2o2023_Grp05\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutAntesLogin.cshtml.rz.scp.css
