@@ -14,7 +14,7 @@ namespace PetFriends.Controllers
         }
         
         public ActionResult Index()
-        {
+        {   
             return View(_context.Animal.ToList());
         }
 
@@ -22,7 +22,7 @@ namespace PetFriends.Controllers
         public ActionResult Create()
         {          
             Animal Animal = new Animal();
-            
+
             ViewBag.Nome = Animal.Nome;
             ViewBag.NomeFinal = Animal.NomeFinal;
             ViewBag.IdGenero = _context.Genero;
@@ -64,6 +64,7 @@ namespace PetFriends.Controllers
         {
             //if (ModelState.IsValid)
             //{
+
             if (animal.Foto == null)
             {
                 animal.Foto = "~/Images/logo.png";

@@ -42,4 +42,9 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\LarTemporario\" />
+    <Folder Include="Views\TipoAnimal\" />
+  </ItemGroup>
+
 </Project>

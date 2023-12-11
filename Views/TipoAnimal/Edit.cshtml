@@ -1,0 +1,46 @@
+﻿@model PetFriends.Models.TipoAnimal
+@{
+    ViewData["Title"] = "Editar tipo";
+}
+
+@if (ViewBag.Message != null)
+{
+    <p class="alert alert-success" role="alert">
+        @ViewBag.Message
+    </p>
+}
+
+<div class="container mt-3">
+    <h2>@ViewData["Title"]</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.TipoDesc, htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.TipoDesc, new { htmlAttributes = new { @class = "form-control", @placeholder = "" } })
+                    @Html.ValidationMessageFor(model => model.TipoDesc, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                <br /> <!-- Remover uma quebra de linha -->
+                <button type="submit" class="btn btn-primary" style="background-color: #32CD32; color: white;">SALVAR</button>
+                <br />
+            </div>
+        </div>
+
+    }
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <br />
+            @Html.ActionLink("Voltar para lista", "Index")
+        </div>
+    </div>
+</div>

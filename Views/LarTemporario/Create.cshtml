@@ -1,0 +1,81 @@
+﻿@model PetFriends.Models.LarTemporario
+@{
+    ViewData["Title"] = "Criar novo lar";
+}
+
+@if (ViewBag.Message != null)
+{
+    <p class="alert alert-success" role="alert">
+        @ViewBag.Message
+    </p>
+}
+
+<div class="container mt-3">
+    <h2>@ViewData["Title"]</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.NomeLarTemporario, htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.NomeLarTemporario, new { htmlAttributes = new { @class = "form-control", @placeholder = "" } })
+                    @Html.ValidationMessageFor(model => model.NomeLarTemporario, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.IdResponsavelLarTemporario, htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.IdResponsavelLarTemporario, new { htmlAttributes = new { @class = "form-control", @placeholder = "" } })
+                    @Html.ValidationMessageFor(model => model.IdResponsavelLarTemporario, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.IdStatusContato, htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.IdStatusContato, new { htmlAttributes = new { @class = "form-control", @placeholder = "" } })
+                    @Html.ValidationMessageFor(model => model.IdStatusContato, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PreviaComentario, htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.PreviaComentario, new { htmlAttributes = new { @class = "form-control", @placeholder = "" } })
+                    @Html.ValidationMessageFor(model => model.PreviaComentario, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group col-md-1  pb-0">
+                @Html.LabelFor(model => model.Ativo, htmlAttributes: new { @class = "control-label" })                 
+                @Html.CheckBoxFor(model => model.Ativo, new { @id = "Ativo",@title = "Sim/Não", @data_toggle = "toggle", @data_on="Sim", @data_off="Não",@data_onstyle="success", @data_offstyle="danger"})
+            </div>   
+            <div class="form-group col-md-3 pb-2">
+                @Html.LabelFor(model => model.DataCadastro, htmlAttributes: new { @class = "control-label" })
+                @Html.TextBoxFor(model => model.DataCadastro, new { @type = "date", @class = "form-control datepicker", @id = "DataDivulgacao" })
+            </div>
+            <div class="form-group col-md-3 pb-2">
+                @Html.LabelFor(model => model.DataArquivamento, htmlAttributes: new { @class = "control-label" })
+                @Html.TextBoxFor(model => model.DataArquivamento, new { @type = "date", @class = "form-control datepicker", @id = "DataDivulgacao" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                <br /> <!-- Remover uma quebra de linha -->
+                <button type="submit" class="btn btn-primary" style="background-color: #32CD32; color: white;">SALVAR</button>
+                <br />
+            </div>
+        </div>
+
+    }
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <br />
+            @Html.ActionLink("Voltar para lista", "Index")
+        </div>
+    </div>
+</div>

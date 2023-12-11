@@ -13,46 +13,62 @@
          <nav class="navbar navbar-dark navbar-expand-sm navbar-toggleable-sm bg-custom border-bottom box-shadow mb-3" style="background-color: #FF7A26; height:67px; font-size:16px">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span><img id="logo" src="~/Images/logo.png" width="50" height="50"/></span>
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img id="logo" src="~/Images/logo.png" width="50" height="50"/>
+                    </a>                        
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <img id="logo" src="~/Images/logo.png" width="50" height="50"/>
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Animal" asp-action="Index">Animal</a>
-                        </li>                        
-                        <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Lar Temporario</a>
-                        </li>
-                        <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Custos</a>
-                        </li>
-                        <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="DespesaFixa" asp-action="Index">Despesas</a>
-                        </li>
-                        @*<li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Adocao" asp-action="Index">Adoção</a>
-                        </li>*@
-                        <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="CustoPorResgate" asp-action="Index">Custo por Resgate</a>
-                        </li>
-                       
-                        <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="CorPelo" asp-action="Index">CorPelo</a>
-                        </li>
-
-                        <li class="nav-item g-0">
-                            <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Usuario" asp-action="Index">Usuario</a>
-                        </li>
-                    </ul>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" color="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <a class="nav-link text-light fw-bold" asp-area="" asp-controller="HomeAfterLogin" asp-action="Index">
+                        <img id="logo" src="~/Images/logo.png" width="50" height="50"/>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Animais
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Animal" asp-action="Index">Cadastrar animal</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="TipoAnimal" asp-action="Index">Tipos de Animais</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="CorPelo" asp-action="Index">CorPelo</a>  
+                                    @*<a class="dropdown-item" asp-area="" asp-controller="Adocao" asp-action="Index">Adoção</a> *@
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Financeiro
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <a class="dropdown-item" asp-area="" asp-controller="DespesaFixa" asp-action="Index">Despesas</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="CustoPorResgate" asp-action="Index">Custo por Resgate</a>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Colaboradores
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <a class="dropdown-item" asp-area="" asp-controller="Usuario" asp-action="Index">Usuários</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="LarTemporario" asp-action="Index">Lar Temporario</a>                  
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <!-- Utilizando justify-content-end para alinhar à direita -->
+                            <li class="nav-item g-0" style="font-size:18px;">
+                                <a class="nav-link text-light fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    @*<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" color="white" class="bi bi-person-circle" viewBox="0 0 16 16">
                       <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                       <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                    </svg>
+                    </svg>*@
                 </div>
             </div>
         </nav>

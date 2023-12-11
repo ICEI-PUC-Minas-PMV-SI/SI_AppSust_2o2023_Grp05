@@ -19,7 +19,6 @@ namespace PetFriends.Data
         public DbSet<TipoAnimal> TipoAnimal { get; set; }
 
         public DbSet<Raca> Raca { get; set; }
-
         public DbSet<Porte> Porte { get; set; }
 
         public DbSet<CorPelo> CorPelo { get; set; }
@@ -35,8 +34,6 @@ namespace PetFriends.Data
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<TipoUsuario> TipoUsuario { get; set; }
 
-        //public DbSet<Adocao> Adocao { get; set; }
-        //public DbSet<PadrinhoDoador> PadrinhoDoador { get; set; }
     }
 }
 

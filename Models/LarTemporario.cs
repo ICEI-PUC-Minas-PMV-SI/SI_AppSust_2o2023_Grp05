@@ -8,9 +8,9 @@ namespace PetFriends.Models
         [Key]
         public int Id { get; set; }
 
-        [Display(Name = "Cor do pelo")]
+        [Display(Name = "Nome do Lar Temporario")]
         [DataType(DataType.Text)]
-        [Required(ErrorMessage = "Cor do pelo do animal obrigatório")]
+        [Required(ErrorMessage = "Nome do lar é obrigatório")]
         [MaxLength(100)]
         public String NomeLarTemporario { get; set; }
 
@@ -21,16 +21,24 @@ namespace PetFriends.Models
         [Display(Name = "Contato - Status")]
         [ForeignKey("StatusContato")]
         public int IdStatusContato { get; set; }
-        
-        public String PreviaComentario { get; set; }
 
-        public DateOnly DataCadastro { get; set; }
+        [Display(Name = "Prévia/Comentário")]
+        [DataType(DataType.Text)]
+        [MaxLength(4000)]
+        public String? PreviaComentario { get; set; }
+
+        [Display(Name = "Data do Cadastro")]
+        [DataType(DataType.Date)]
+        //[Required(ErrorMessage = "Data do Cadastro do pet é obrigatório")]
+        [MaxLength(10)]
+        [StringLength(10)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
+        public String? DataCadastro { get; set; }
 
         [Display(Name = "Ativo?")]
         public bool Ativo { get; set; }
 
-        public DateOnly? DataArquivamento { get; set; }
+        public String? DataArquivamento { get; set; }
 
-        //Pra quem estiver fazendo o lat temporário, aqui está somente os campos sem validaçao ou relacionamento. Aplicar... Coloquei o esqueleto aqui porque eu preciso do lar na tela de animais -- Sara
     }
 }

@@ -28,6 +28,7 @@ namespace PetFriends.Models
         [ForeignKey("TipoAnimal")]
         public int IdTipoAnimal { get; set; }
         public virtual TipoAnimal TipoAnimal { get; set; }
+        //public virtual Raca Raca { get; set; }
 
         [Display(Name = "Gênero")]
         [Required(ErrorMessage = "* Gênero do pet é obrigatório")]
@@ -43,7 +44,7 @@ namespace PetFriends.Models
 
         [Display(Name = "Data do Resgate")]
         [DataType(DataType.Date)]
-        //[Required(ErrorMessage = "Data do Resgate do pet é obrigatório")]
+        [Required(ErrorMessage = "Data do Resgate do pet é obrigatório")]
         [MaxLength(10)]
         [StringLength(10)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
