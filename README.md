@@ -10,7 +10,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* [Everton Kennedy](https://github.com/evertondskk)
+* [Everton de Souza Kenedy](https://github.com/evertondskk)
 * [Isabela Martins de Carvalho Pereira](https://github.com/isabelamartinez)
 * [João Paulo Maia de Paula](https://github.com/JPMaiadeP)
 * [Roberto Santos de Almeida](https://github.com/b3tones)
