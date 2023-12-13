@@ -33,10 +33,11 @@ namespace PetFriends.Controllers
             MailMessage mailMessage = new MailMessage();
             smtpClient.Credentials = new NetworkCredential
             {
-                UserName = "ongpetfriends@gmail.com",
-                Password = "Ogn2023pet2023friends!@#$"
+                //UserName = "ongpetfriends@gmail.com",
+                //Password = "Ogn2023pet2023friends!@#$"
 
-                //"ucwn etap ghsg oqjg"
+                UserName = "ongpetfriends@gmail.com",
+                Password = "ucwn etap ghsg oqjg"
                 //turn on 2-factor authentication first
                 //create app pass: https://myaccount.google.com/u/0/apppasswords?pli=1&rapt=AEjHL4NuuWD9E7vyqwfN8hCnd1eNF8qX4l7p_lugZgr8hiICebARA5VqSXgkT2b38gnX72MVEj1d98dkTPC93reaaXIy5Bh9lqSDRfWrrADSJzV95NwucE0
             };
@@ -53,7 +54,7 @@ namespace PetFriends.Controllers
             if (smtpClient != null)
                 smtpClient.Send(mailMessage);
 
-            return View();
+            return RedirectToAction("Index");
         }
     }
 }
