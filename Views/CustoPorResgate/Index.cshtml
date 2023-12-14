@@ -1,7 +1,7 @@
 ﻿@model List<PetFriends.Models.CustoPorResgate>
 
 @{
-    ViewData["Title"] = "Lista de todos os custos por resgate";
+    ViewData["Title"] = "Todos os custos por resgate";
 }
 
 <div class="container justify-content-sm-center g-10" style="padding:5px;">
@@ -20,17 +20,17 @@
     </div>
     <form class="form-control">
         <div class="row pb-1">
-            <table style="justify-content:center; border:1px solid #aaaaaa; border-collapse: collapse; width: 100%; margin-top: 20px;">
+            <table style="justify-content: center; border: 1px solid #aaaaaa; border-collapse: collapse; width: 98%; margin-top: 10px;margin-bottom: 10px;margin-right: 5px;margin-left: 10px;">
                 <thead>
                     <tr>
-                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">#</th>
-                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Ação</th>
-                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Custo Macho</th>
-                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Custo Fêmea</th>
-                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Data do Cadastro</th>
-                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Ativo?</th>
-                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Editar</th>
-                        <th style="border: 1px solid #dddddd; text-align: left; padding: 8px; background-color: #f2f2f2;">Excluir</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 3px; background-color: #f2f2f2;">#</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 3px; background-color: #f2f2f2;">Ação</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 3px; background-color: #f2f2f2;">Custo Macho</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 3px; background-color: #f2f2f2;">Custo Fêmea</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 3px; background-color: #f2f2f2;">Data do Cadastro</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 3px; background-color: #f2f2f2;">Ativo?</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 3px; background-color: #f2f2f2;">Editar</th>
+                        <th style="border: 1px solid #dddddd; text-align: left; padding: 3px; background-color: #f2f2f2;">Excluir</th>
                     </tr>
                 </thead>
                 @*<p><b>Lista de todos os custos por resgate</b></p>*@
@@ -38,12 +38,12 @@
                     @foreach (var c in Model)
                     {
                         <tr>
-                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@c.Id</td>
-                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@c.Acao</td>
-                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@string.Format("R$ {0:N2}", c.CustoMacho)</td>
-                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@string.Format("R$ {0:N2}", c.CustoFemea)</td>
-                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@c.DataCadastro</td>
-                            <td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">@(c.Ativo ? "Sim" : "Não")</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 3px;">@c.Id</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 3px;">@c.Acao</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 3px;">@string.Format("R$ {0:N2}", c.CustoMacho)</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 3px;">@string.Format("R$ {0:N2}", c.CustoFemea)</td>
+                            <td style="border: 1px solid #dddddd; text-align: left; padding: 3px;">@string.Format("{0:MM/dd/yyyy}", c.DataCadastro)</td> 
+                            <td style="border: 1px solid #dddddd; text-align: center; padding: 3px;"><input type="checkbox" name="report_myTextEditBox" checked=@c.Ativo></td>    
                             <td style="border: 1px solid #dddddd; text-align: center; padding: 8px; width: 25px">                                
                                 <a id="editarUsuario" href='@Url.Action("Edit", "CustoPorResgate", new { id = c.Id })' style="color:lightgreen">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-pencil-square" viewBox="0 0 16 16">

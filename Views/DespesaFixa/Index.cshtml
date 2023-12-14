@@ -1,7 +1,7 @@
 ﻿@model List<PetFriends.Models.DespesaFixa>
 
 @{
-    ViewData["Title"] = "Lista de todas as despesas fixas";
+    ViewData["Title"] = "Todas as despesas fixas";
 }
 
 <div class="container justify-content-sm-center g-10" style="padding: 5px;">
@@ -20,27 +20,27 @@
     </div>
     <form class="form-control">
         <div class="row pb-1">
-            <table style="justify-content:center;border:1px solid #aaaaaa;border-collapse: collapse; width: 100%;margin-top: 20px;">
+            <table style="justify-content: center; border: 1px solid #aaaaaa; border-collapse: collapse; width: 98%; margin-top: 10px;margin-bottom: 10px;margin-right: 5px;margin-left: 10px;">
                 <thead>
                     <tr>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">#</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Porte</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Tipo</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Onde</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Valor</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Editar</th>
-                        <th style="border: 1px solid #dddddd;text-align: left;padding: 8px;background-color: #f2f2f2;">Excluir</th>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 3px;background-color: #f2f2f2;">#</th>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 3px;background-color: #f2f2f2;">Porte</th>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 3px;background-color: #f2f2f2;">Tipo</th>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 3px;background-color: #f2f2f2;">Onde</th>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 3px;background-color: #f2f2f2;">Valor</th>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 3px;background-color: #f2f2f2;">Editar</th>
+                        <th style="border: 1px solid #dddddd;text-align: left;padding: 3px;background-color: #f2f2f2;">Excluir</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var d in Model)
                     {
                         <tr>
-                            <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@d.Id</td>
-                            <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@d.IdPorte</td>
-                            <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@d.TipoDespesa</td>
-                            <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@d.Onde</td>
-                            <td style="border: 1px solid #dddddd;text-align: left;padding: 8px;">@string.Format("R$ {0:N2}", d.ValorDespesa)</td>
+                            <td style="border: 1px solid #dddddd;text-align: left;padding: 3px;">@d.Id</td>
+                            <td style="border: 1px solid #dddddd;text-align: left;padding: 3px;">@d.IdPorte</td>
+                            <td style="border: 1px solid #dddddd;text-align: left;padding: 3px;">@d.TipoDespesa</td>
+                            <td style="border: 1px solid #dddddd;text-align: left;padding: 3px;">@d.Onde</td>
+                            <td style="border: 1px solid #dddddd;text-align: left;padding: 3px;">@string.Format("R$ {0:N2}", d.ValorDespesa)</td>
                             <td style="border: 1px solid #dddddd; text-align: center; padding: 8px; width: 25px">                                
                                 <a id="editarUsuario" href='@Url.Action("Edit", "DespesaFixa", new { id = d.Id })' style="color:lightgreen">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-pencil-square" viewBox="0 0 16 16">
