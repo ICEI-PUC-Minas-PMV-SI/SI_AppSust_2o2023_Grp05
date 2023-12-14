@@ -33,13 +33,16 @@ namespace PetFriends.Controllers
             MailMessage mailMessage = new MailMessage();
             smtpClient.Credentials = new NetworkCredential
             {
+                //Credenciais do email
                 //UserName = "ongpetfriends@gmail.com",
                 //Password = "Ogn2023pet2023friends!@#$"
 
-                UserName = "ongpetfriends@gmail.com",
-                Password = "ucwn etap ghsg oqjg"
                 //turn on 2-factor authentication first
                 //create app pass: https://myaccount.google.com/u/0/apppasswords?pli=1&rapt=AEjHL4NuuWD9E7vyqwfN8hCnd1eNF8qX4l7p_lugZgr8hiICebARA5VqSXgkT2b38gnX72MVEj1d98dkTPC93reaaXIy5Bh9lqSDRfWrrADSJzV95NwucE0
+                //nao usar credentials do email direto aqui - nao funcional - seguir os passos acima
+                UserName = "ongpetfriends@gmail.com",
+                Password = "ucwn etap ghsg oqjg"
+               
             };
 
             smtpClient.EnableSsl = true;
@@ -48,8 +51,19 @@ namespace PetFriends.Controllers
 
             mailMessage.From = new MailAddress(email.Remetente);
             mailMessage.To.Add("ongpetfriends@gmail.com");
-            mailMessage.Subject = "Novo Formulário de Doaçao " + email.NomeRemetente;
-            mailMessage.Body = string.Format("{0} {1} {2}", email.NomeRemetente, email.EnderecoRemetente, email.Mensagem);
+            mailMessage.Subject = "Novo questionário pet - " + email.NomeRemetente;
+            mailMessage.Body = "Email: " + email.Remetente + "\n" + 
+                               "Nome Completo: " + email.NomeRemetente + "\n" + 
+                               "RG: " + email.RgRemetente + "\n" + 
+                               "CPF: " + email.CpfRemetente + "\n" + 
+                               "Telefone: " + email.TelefoneRemetente + "\n" +
+                               "Concorda em avisar em caso de alteração de dados do contato?: " + email.AvisarRemetente + "\n" +
+                               "Endereço: " + email.EnderecoCompletoRemetente + "\n" +
+                               "CEP: " + email.CepRemetente + "\n" +
+                               "Profissão: " + email.ProfissaoRemetente + "\n" +
+                               "Religião: " + email.ReligiaoRemetente + "\n" +
+                               "Link rede social: " + email.RedeSocialRemetente + "\n" +
+                               "Como ficou sabendo sobre a ONG: " + email.ComoFicouSabendoRemetente + "\n" ;
 
             if (smtpClient != null)
                 smtpClient.Send(mailMessage);

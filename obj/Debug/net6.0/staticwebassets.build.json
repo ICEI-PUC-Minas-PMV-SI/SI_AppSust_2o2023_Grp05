@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bGO2/boLnFo5b5WPgi/9jRbFsF4gfik7KN7euXq5dAw=",
+  "Hash": "HfZGo2jezZ3onjpAjiCLJ+pPkvV/uy+A3beefXzsq/I=",
   "Source": "PetFriends",
   "BasePath": "_content/PetFriends",
   "Mode": "Default",
@@ -321,6 +321,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\anahi.png"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\PF\\wwwroot\\Images\\banner-lei-dados-pessoais.png",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\PF\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "Images/banner-lei-dados-pessoais.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner-lei-dados-pessoais.png"
+    },
+    {
+      "Identity": "C:\\Users\\Sara Vidal\\Desktop\\PF\\wwwroot\\Images\\banner-questionario-pet.png",
+      "SourceId": "PetFriends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sara Vidal\\Desktop\\PF\\wwwroot\\",
+      "BasePath": "_content/PetFriends",
+      "RelativePath": "Images/banner-questionario-pet.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\banner-questionario-pet.png"
     },
     {
       "Identity": "C:\\Users\\Sara Vidal\\Desktop\\PF\\wwwroot\\Images\\doacao.png",

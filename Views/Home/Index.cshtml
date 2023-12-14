@@ -250,7 +250,7 @@
     <p>
     <p>
     <p>
-    <p>
+    <h7>
     <section class="u-clearfix u-section-3" id="carousel_63d5">
 
         <div class="custom-expanded data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1 u-align-center">
@@ -341,106 +341,147 @@
     </section>
     <br />
     <section class="u-align-center u-clearfix u-section-10" src="" id="sec-f7c4">
-        <img class="u-absolute-hcenter u-expanded-height u-image u-image-1" src="images/anahi.png" data-image-width="968" data-image-height="1222" style="width:1222px;height:600px>
-      <h1 class="u-align-left u-text u-text-body-alt-color u-title u-text-1">POR QUE&nbsp;<br>APADRINHAR?
-      </h1>
-      <p class="u-align-left u-large-text u-text u-text-variant u-text-white u-text-2">Ao apadrinhar um animal, você garante que ele receberá alimentação adequada, atendimento veterinário e abrigo seguro.<br>
-      </p>
+        <img class="u-absolute-hcenter u-expanded-height u-image u-image-1" src="images/anahi.png" data-image-width="968" data-image-height="1222" style="max-width:1150px;">
+        <h1 class="u-align-left u-text u-text-body-alt-color u-title u-text-1">POR QUE&nbsp;<br>APADRINHAR?</h1>
+        <p class="u-align-left u-large-text u-text u-text-variant u-text-white u-text-2">Ao apadrinhar um animal, você garante que ele receberá alimentação adequada, atendimento veterinário e abrigo seguro.<br></p>
     </section>
-    <br />
-    <section class="u-clearfix u-custom-color-1 u-section-11" id="sec-aa4b">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-row">
-              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-27 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                <div class="u-container-layout u-container-layout-1">
-                  <h2 class="u-align-left u-text u-text-1">Doações e Apadrinhamentos</h2>
-                  <div class="u-list u-list-1">
-                    <div class="u-repeater u-repeater-1">
-                      <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
-                        <div class="u-container-layout u-similar-container u-container-layout-2">
-                          <h5 class="u-text u-text-2"><span class="u-file-icon u-icon u-text-black u-icon-1"><img src="images/1082334-a30a919e.png" alt=""></span>&nbsp;Telefone
-                          </h5>
-                          <p class="u-text u-text-3">+55 (11) 99453-2610, +55 (11) 97650-6077</p>
-                        </div>
-                      </div>
-                      <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
-                        <div class="u-container-layout u-similar-container u-container-layout-3">
-                          <h5 class="u-text u-text-4"><span class="u-file-icon u-icon u-text-black u-icon-2"><img src="images/205d33fb-71c4-40dc-a07f-7a1273e85973-76b12e17.png" alt=""></span>&nbsp;Localização
-                          </h5>
-                          <p class="u-text u-text-5"> São Paulo, SP, Brasil</p>
-                        </div>
-                      </div>
-                      <div class="u-container-style u-list-item u-repeater-item u-shape-rectangle">
-                        <div class="u-container-layout u-similar-container u-container-layout-4">
-                          <h5 class="u-text u-text-6"><span class="u-file-icon u-icon u-text-black u-icon-3"><img src="images/2791568-386ebefb.png" alt=""></span>&nbsp;Horário Comercial
-                          </h5>
-                          <p class="u-text u-text-7">Todos os dias de 8:00 às 18:00</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p class="u-text u-text-8"><span class="u-file-icon u-icon"><img src="images/3075095.png" alt=""></span>&nbsp;PIX 43.609.394/0001-92 (CNPJ)
-                  </p>
-                </div>
-              </div>
+    <br />    
+    <section class="u-clearfix u-custom-color-1 u-section-11" id="sec-aa4b" style="flex:auto; margin-top:1px">
+        <img src="~/Images/banner-questionario-pet.png" alt="">
+        
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1" style="flex:auto; margin-top:1px">
+          
+        <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1" style="flex:auto; margin-top:1px">
+            <h2 class="u-align-left u-text u-text-1" style="margin-left:5%">Doações e Apadrinhamentos</h2>            
+            <div class="u-layout" style="flex:auto; margin-top:1px">                
+                <h3 class="u-align-left u-text u-text-1" style="margin-left:5%">Questionário Pet</h3>  
+                @using (Html.BeginForm("Email", "Home", FormMethod.Post))
+                    {                              
+                        <div class="u-container-align-center u-container-style u-layout-cell u-right-cell u-layout-cell-2 u-size-12-sm" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500" style="flex:auto; margin-top:1px">
+                            <div class="u-container-layout u-valign-top u-container-layout-5">
+                              <div class="custom-expanded u-form u-form-1">
+                                <form method="post" action="SendEmail" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 1px" source="email" name="form">
+                                        <div class="u-form-email u-form-group u-form-partition-factor-2" style="width:1025px; margin-bottom:5%">
+                                            <label for="email" class="u-label u-text-body-alt-color u-label-1">Email <span style="color:white">*</span></label>
+                                            <input type="text" placeholder="Entre um e-mail válido" id="email" name="Remetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                        </div>
 
-              @using (Html.BeginForm("Email", "Home", FormMethod.Post))
-                {      
-                    
-                    <div class="u-container-align-center u-container-style u-layout-cell u-right-cell u-size-33 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                        <div class="u-container-layout u-valign-middle u-container-layout-5">
-                          <div class="custom-expanded u-form u-form-1">
-                            <form method="post" action="SendEmail" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
-                              <div class="u-form-email u-form-group u-form-partition-factor-2">
-                                <label for="email-319a" class="u-label u-text-body-alt-color u-label-1">Email</label>
-                                <input type="text" placeholder="Entre um e-mail válido" id="email-319a" name="Remetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                        <a class="btn" style="background-color:#292929" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Continuar preenchendo o formulário...
+                                        </a>
+                                        <div class="collapse" id="collapseExample" style="background-color:white ; width:1025px; margin-bottom:1%">
+                                            <div class="card card-body" style="background-color:#d6d6d6; width:1025px; margin-bottom:1%">
+                                                <img src="~/Images/banner-lei-dados-pessoais.png" alt="" style="padding:1%; margin-bottom:3%">
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="nome" class="u-label u-label-5" style="color:black">Nome Completo <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="Seu Nome aqui..." id="nome" name="NomeRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>                              
+                                                 <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="rg" class="u-label u-label-5" style="color:black">RG <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="RG aqui..." id="rg" name="RgRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="cpf" class="u-label u-label-5" style="color:black">CPF <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="CPF aqui..." id="cpf" name="CpfRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="telefone" class="u-label u-label-5" style="color:black">Telefone <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="Telefone aqui..." id="telefone" name="TelefoneRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="aviso" class="u-label u-label-5" style="color:black">Você concorda em nos avisar em caso de alteração de dados de contato? <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="Avisar qui..." id="aviso" name="AvisarRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="endereco" class="u-label u-label-5" style="color:black">Endereço completo <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="Endereço aqui..." id="endereco" name="EnderecoCompletoRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="cep" class="u-label u-label-5" style="color:black">CEP <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="CEP aqui..." id="cep" name="CepRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="profissao" class="u-label u-label-5" style="color:black">Profissão <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="Profissão aqui..." id="profissao" name="ProfissaoRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="religiao" class="u-label u-label-5" style="color:black">Religião <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="Religião aqui..." id="religiao" name="ReligiaoRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="rede-social" class="u-label u-label-5" style="color:black">Rede social <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="Link aqui..." id="rede-social" name="RedeSocialRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-form-address u-form-group u-form-group-3" style="width:990px; margin-bottom:1%">
+                                                    <label for="como-ficou-sabendo" class="u-label u-label-5" style="color:black">Como ficou sabendo do PetFriends? <span style="color:red">*</span></label>
+                                                    <input type="text" placeholder="Indique aqui..." id="como-ficou-sabendo" name="ComoFicouSabendoRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                                                </div>
+                                                <div class="u-align-left u-form-group u-form-submit" style="padding:5px; margin-top:5%; margin-bottom:5%;width:990px;">   
+                                                    <a href="#" style="background-color:black" class="u-active-grey-75 u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-grey-80 u-radius u-btn-1"><span style="color:white">ENVIAR</span></a>
+                                                    <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">   
+                                                </div>
+                                                <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Obrigado! Sua Mensagem foi enviada. </div>
+                                                <div class="u-form-send-error u-form-send-message" wfd-invisible="true">Não foi possível enviar sua mensagem. Por favor, preencha os dados corretamente e tente novamente. </div>
+                                                <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
+                                                <input type="hidden" name="formServices" value="75111142-cd40-493c-8ec6-2efbb46556a0">
+                                            </div>
+                                        </div>
+                                </form>
                               </div>
-                              <div class="u-form-group u-form-name u-form-partition-factor-2">
-                                <label for="name-319a" class="u-label u-text-body-alt-color u-label-2">Nome Completo</label>
-                                <input type="text" placeholder="Seu Nome aqui..." id="name-319a" name="NomeRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
-                              </div>
-                              <div class="u-form-address u-form-group u-form-group-3">
-                                <label for="address-452f" class="u-label u-text-body-alt-color u-label-3">Endereço</label>
-                                <input type="text" placeholder="Seu endereço aqui..." id="address-452f" name="EnderecoRemetente" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
-                              </div>
-                              <div class="u-form-address u-form-group u-form-group-3">
-                                <label for="address-452f" class="u-label u-text-body-alt-color u-label-3">Assunto</label>
-                                <input placeholder="Assunto..." id="message-319a" name="Assunto" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required=""></input>
-                              </div>
-                              <div class="u-form-group u-form-message"  style="padding:5px; margin-bottom:10px">
-                                <label for="message-319a" class="u-label u-text-body-alt-color u-label-4">Mensagem</label>
-                                <textarea placeholder="Mensagem aqui..." rows="4" cols="50" id="message-319a" name="Mensagem" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required=""></textarea>
-                              </div>
-                              <div class="u-align-left u-form-group u-form-submit" style="padding:5px; margin-top:10px">
-                                <a href="#" class="u-active-grey-75 u-black u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-grey-80 u-radius u-btn-1">ENVIAR</a>
-                                <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">   
-                              </div>
-                              <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Obrigado! Sua Mensagem foi enviada. </div>
-                              <div class="u-form-send-error u-form-send-message" wfd-invisible="true">Não foi possível enviar sua mensagem. Por favor, preencha os dados corretamente e tente novamente. </div>
-                              <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
-                              <input type="hidden" name="formServices" value="75111142-cd40-493c-8ec6-2efbb46556a0">
-                            </form>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                }
-
+                    }
             </div>
-          </div>
         </div>
       </div>
     </section>
     <br />
-    <br />
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7f4a"><div class="u-clearfix u-sheet u-sheet-1">
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7f4a">
+        <div style="margin-top:1%;margin-bottom:1%">
+            <h7 class="u-text u-text-2">
+                <span class="u-file-icon u-icon u-text-black u-icon-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#DC8800" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                </span>&nbsp;Telefone: +55 (11) 99453-2610, +55 (11) 97650-6077
+            </h7>
+        </div>
+        
+        <div style="margin-bottom:1%">
+            <h7 class="u-text u-text-2">
+                <span class="u-file-icon u-icon u-text-black u-icon-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#DC8800" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                </span>&nbsp;Localização: São Paulo, SP, Brasil
+            </h7>
+        </div>
+        <div style="margin-bottom:1%">
+            <h7 class="u-text u-text-2">
+                <span class="u-file-icon u-icon u-text-black u-icon-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#DC8800" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                    </svg>
+                </span>&nbsp;Horário Comercial: Todos os dias de 8:00 às 18:00
+            </h7>
+        </div>
+        <div style="margin-bottom:1%">
+            <h7 class="u-text u-text-2">
+                <span class="u-file-icon u-icon u-text-black u-icon-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#DC8800" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                      <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                      <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                      <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                    </svg>
+                </span>&nbsp;PIX: 43.609.394/0001-92 (CNPJ)
+            </h7>
+        </div>
         <p class="u-small-text u-text u-text-variant u-text-1">ONG Pet Friends -&nbsp;​São Paulo, SP, Brasil</p>
-      </div></footer>
+    </footer>
     <br />
     <br />
     <br />
-    </section>
   
-</body></html>
+</body>
+</html>
