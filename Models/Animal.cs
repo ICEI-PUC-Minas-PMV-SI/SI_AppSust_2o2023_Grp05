@@ -50,9 +50,11 @@ namespace PetFriends.Models
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public String? DataResgate { get; set; }
 
+        [Display(Name = "Idade Anos")]
         [Range(0, int.MaxValue, ErrorMessage = "Anos somente acima de 0.")]
         public int? IdadeAnos { get; set; }
 
+        [Display(Name = "Idade Meses")]
         [Range(0, int.MaxValue, ErrorMessage = "Meses somente acima de 0.")]
         public int? IdadeMeses { get; set; }
 
@@ -70,6 +72,7 @@ namespace PetFriends.Models
         [Display(Name = "Adestrar?")]
         public bool Adestravel { get; set; }
 
+        [Display(Name = "Foto")]
         [DataType(DataType.Text)]
         [MaxLength(255)]
         public String? Foto { get; set; }
